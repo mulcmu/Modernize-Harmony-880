@@ -37,34 +37,31 @@ void setup() {
 
   tft.init();
 
+  digitalWrite(LCD_BL_GPIO,HIGH);
+  digitalWrite(BUTTON_LED_GPIO,LOW);
+  
+  tft.fillScreen(TFT_WHITE);
+  
+  tft.setRotation(2);
+  tft.setTextSize(4);  
+  tft.setTextColor(TFT_BLACK, TFT_WHITE);
+  tft.setTextDatum(MC_DATUM);  
+  tft.setTextPadding(100);
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   
-  
-  digitalWrite(LCD_BL_GPIO,HIGH);
-  digitalWrite(BUTTON_LED_GPIO,HIGH);
-  
-  tft.fillScreen(TFT_RED);
-  delay(500);
+  int button=0;
 
-  tft.fillScreen(TFT_WHITE);
-  delay(500);
-
-  tft.fillScreen(TFT_BLUE);
-  delay(500);
-  
-  digitalWrite(LCD_BL_GPIO,LOW);
-  digitalWrite(BUTTON_LED_GPIO,LOW);
-  delay(500);
-
-
-  // Getting lots of random stuff from Msp430
-  // It is on the right pin, noise stops when MSP430 held in reset
   while(MSP_Serial.available()) {
-    USB_Serial.println(MSP_Serial.read());
+    button = MSP_Serial.read();
   }
 
-  USB_Serial.println("loop");
+  if(button>0)
+    tft.drawNumber(button,120,160);
+
+  USB_Serial.printf("loop %d\n", millis());
+
+  delay(50);
 }
