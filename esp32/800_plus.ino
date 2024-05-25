@@ -50,18 +50,23 @@ void setup() {
 
 }
 
+int button=0;
+
 void loop() {
   
-  int button=0;
+
 
   while(MSP_Serial.available()) {
     button = MSP_Serial.read();
+    USB_Serial.printf("button: %d\n", button);
   }
 
-  if(button>0)
+  if(button>0 && button < 0xFE)
     tft.drawNumber(button,120,160);
+  else
+    tft.drawString("880+",120,160);
 
-  USB_Serial.printf("loop %d\n", millis());
+  //USB_Serial.printf("loop %d:\t%d\n", millis(), button);
 
   delay(50);
 }
