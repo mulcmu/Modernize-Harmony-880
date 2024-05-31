@@ -42,9 +42,13 @@ const uint8_t buttonMatrix[buttonRows][buttonCols] = {
 void process_buttons(void) {
 
         uint8_t button = 0;
+        uint8_t column = 0;
 
-        if(P2IN != 0) {
-            button = buttonMatrix[ bit_to_index[P3OUT] ][ bit_to_index[P2IN] ];
+        //Zero is no buttons pressed, but is a valid index
+        //128 and greater is P1.7 for ball spring sensor
+        column = P2IN & (~BIT7);
+        if(column != 0 ) {
+            button = buttonMatrix[ bit_to_index[P3OUT] ][ bit_to_index[column] ];
         }
 
  

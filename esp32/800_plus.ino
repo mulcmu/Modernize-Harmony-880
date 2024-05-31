@@ -31,6 +31,7 @@ void setup() {
   // put your setup code here, to run once:
   pinMode(LCD_BL_GPIO,OUTPUT);
   pinMode(BUTTON_LED_GPIO,OUTPUT);
+  pinMode(7,INPUT_PULLUP);
 
   USB_Serial.begin(115200);
   MSP_Serial.begin(115200, SERIAL_8N1, 18, 17);
@@ -54,11 +55,19 @@ int button=0;
 
 void loop() {
   
+  if(digitalRead(7)==HIGH) {
+    digitalWrite(LCD_BL_GPIO,HIGH);
+    digitalWrite(BUTTON_LED_GPIO,LOW);
+  } else{
+    digitalWrite(LCD_BL_GPIO,LOW);
+    digitalWrite(BUTTON_LED_GPIO,HIGH);
+  }
+
 
 
   while(MSP_Serial.available()) {
     button = MSP_Serial.read();
-    USB_Serial.printf("button: %d\n", button);
+    USB_Serial.printf("millis %d:\tbutton: %d\n", millis(), button);
   }
 
   if(button>0 && button < 0xFE)
@@ -68,5 +77,5 @@ void loop() {
 
   //USB_Serial.printf("loop %d:\t%d\n", millis(), button);
 
-  delay(50);
+  //delay(1);
 }

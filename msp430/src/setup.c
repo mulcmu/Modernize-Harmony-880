@@ -29,7 +29,7 @@ void mcu_init(void) {
     P1IFG = 0;
 
     /* Port 2 Output Register */
-    P2OUT = 0;
+    P2OUT = BIT7;  //PULL UP reistor for 2.7
 
     /* Port 2 Port Select Register */
     P2SEL &= ~(BIT6 | BIT7);

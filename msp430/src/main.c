@@ -53,6 +53,8 @@ int main(void) {
 	last_button_scan=0;
 	last_button_press = -5000;
 
+	BitSet(P1OUT, BIT0);
+
   	while (1) {
 
 	if(ticks-last_button_scan > 5) {
@@ -60,7 +62,7 @@ int main(void) {
 		last_button_scan = ticks;
 	}
 
-	if(ticks-last_button_press == 60) {
+	if(ticks-last_button_press == 60 ) {
 		UCA0TXBUF = 0xFF;
 	}
 
