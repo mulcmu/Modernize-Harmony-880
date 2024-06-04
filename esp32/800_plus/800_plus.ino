@@ -9,6 +9,7 @@
 
 // #include "WiFi.h"
 
+//About 7 pixels obscured at top and 20 at bottom
 #include "ui.h"
 
 //Configuration for tft_espi user_setup.h
@@ -34,6 +35,8 @@
 #define DRAW_BUF_SIZE (SCREEN_WIDTH * SCREEN_HEIGHT / 10 * (LV_COLOR_DEPTH / 8))
 uint32_t draw_buf[DRAW_BUF_SIZE / 4];
 
+char button_value[10];
+
 // LVGL logging is enabled, it will inform the user about what is happening in the library
 void log_print(lv_log_level_t level, const char * buf) {
   LV_UNUSED(level);
@@ -45,6 +48,14 @@ void log_print(lv_log_level_t level, const char * buf) {
 static uint32_t my_tick(void)
 {
     return millis();
+}
+
+const char *get_var_lv_btn_press(){
+  return button_value;
+}
+
+void set_var_lv_btn_press(const char *value){
+  //ignore lvgl set request
 }
 
 void setup() {
@@ -104,11 +115,16 @@ void loop() {
     USB_Serial.printf("millis %d:\tbutton: %d\n", millis(), button);
   }
 
-  // if(button>0 && button < 0xFE)
-  //   tft.drawNumber(button,120,160);
-  // else
-  //   tft.drawString("880+",120,160);
-
+  if(button>0 && button < 0xFE) {
+    sprintf(button_value, "%d", button);
+    // USB_Serial.println(button_value);
+    tick_screen_main();
+  }
+  else {
+    sprintf(button_value, "880+");
+    // USB_Serial.println(button_value);
+    tick_screen_main();
+}
   //USB_Serial.printf("loop %d:\t%d\n", millis(), button);
 
   lv_task_handler();  // let the GUI do its work
