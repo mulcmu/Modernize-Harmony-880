@@ -4,13 +4,15 @@
 
 //ESP 2.0.15 and 2.0.16 have issue with ST7789 screen and TFT_eSPI, panic on tft.init()
 #include <TFT_eSPI.h>
+
+//LVGL 9.0 and 9.1 have bug with TFT_espi rotate.  Manual update src from github work around until 9.2
 #include <lvgl.h>
 
-#include <examples/lv_examples.h>
-#include <demos/lv_demos.h>
+// #include <examples/lv_examples.h>
+// #include <demos/lv_demos.h>
 // #include "WiFi.h"
 
-// #include "ui.h"
+#include "ui.h"
 
 //Configuration for tft_espi user_setup.h
 // #define ST7789_DRIVER  
@@ -86,9 +88,6 @@ void setup() {
   disp = lv_tft_espi_create(SCREEN_WIDTH, SCREEN_HEIGHT, draw_buf, sizeof(draw_buf));
   lv_display_set_rotation(disp, LV_DISPLAY_ROTATION_180);
 
-  // ui_init();
-
-
   //Check vertical and horizontal resolution of what lvgl sees
   lv_coord_t hor_res = lv_disp_get_hor_res(NULL);
   USB_Serial.print("LVGL Horizontal Resolution: ");
@@ -104,10 +103,12 @@ void setup() {
   USB_Serial.print("LVGL Display DPI: ");
   USB_Serial.println(disp_dpi);
 
-     lv_obj_t *label = lv_label_create( lv_screen_active() );
-     lv_label_set_text( label, "Hello Arduino, I'm LVGL!" );
-     lv_obj_align( label, LV_ALIGN_CENTER, 0, 0 );  
-  
+  // lv_obj_t *label = lv_label_create( lv_screen_active() );
+  // lv_label_set_text( label, "Hello Arduino, I'm LVGL!" );
+  // lv_obj_align( label, LV_ALIGN_CENTER, 0, 0 );  
+
+  ui_init();
+
 }
 
 int button=0;
@@ -140,5 +141,5 @@ void loop() {
 
   lv_task_handler();  // let the GUI do its work
   // lv_tick_inc(5);     // tell LVGL how much time has passed
-  // delay(5);     
+  delay(2);     
 }
