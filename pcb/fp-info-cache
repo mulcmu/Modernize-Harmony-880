@@ -1,4 +1,4 @@
-22646509300135976
+22649944747687724
 880+
 2inch_LCD
 
@@ -34,6 +34,20 @@ ESP_TestPad
 0
 36
 18
+880+
+IR_input
+
+
+0
+4
+3
+880+
+IR_led
+
+
+0
+2
+2
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
