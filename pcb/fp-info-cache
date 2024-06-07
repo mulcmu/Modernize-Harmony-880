@@ -1,4 +1,4 @@
-22649944747687724
+22653380306214221
 880+
 2inch_LCD
 
@@ -12,6 +12,13 @@
 
 0
 13
+2
+880+
+5020passiveBuzzer
+
+
+0
+3
 2
 880+
 Battery_reuse
@@ -48,6 +55,13 @@ IR_led
 0
 2
 2
+880+
+VEML7700
+VEML7700
+Integrated Circuit
+0
+4
+4
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
