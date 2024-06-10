@@ -3758,7 +3758,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 799ca979-5e1a-44c1-a47e-4a4da2b8f564)
   )
-  (text "ESP32 6 free GPIO\nMSP430 0 free gpio\n\nBattery spring contacts have some pegs on bottom.  Need holes added to footprint\nAliexpress 2.5mm x 5p connector maybe same size???\n\nMore bypass capacitors\n\nCradel pinout\n\nIs ESP TX to MSP needed?  Removed it,  we will see....\nRolling ball might work as last switch on button matrix\n\nRegular LEDs instead of reverse mount, \n--less holes and cheaper, clearance and 2 reflows\n--0805 upside down, cheaper, 1 reflow, more hand rework\n\nMore backlight leds around 4 way"
+  (text "ESP32 6 free GPIO\nMSP430 0 free gpio\n\nBattery spring contacts have some pegs on bottom.  Need holes added to footprint\nAliexpress 2.5mm x 5p connector maybe same size???   No, 2.54?? height way shorter\nkeep looking for available replacments\n\nAliexprexx cradle jst bigger than stock, mounting pads wider.\n\nMore bypass capacitors\n\nCradel pinout, anything inside the case interesting...\n\nMore backlight leds around 4 way\n\nIs ESP TX to MSP needed?  Removed it,  we will see....\nRolling ball might work as last switch on button matrix\n\nRegular LEDs instead of reverse mount, \n--less holes and cheaper, clearance and 2 reflows\n--0805 upside down, cheaper, 1 reflow, more hand rework\n\nTest:\nreverse mount of normal leds on existing footprint\nambient light sensor operation inside case.\n\n"
     (at 35.56 267.97 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c21764e3-7735-4970-a715-e24ab4571682)
@@ -4993,8 +4993,8 @@
     (property "Manufacturer_Part_Number" "VEML7700-TT" (at 266.065 920.65 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (pin "2" (uuid 32102db3-e192-45e7-bcb9-a8a4c91de46e))
     (pin "1" (uuid 014964e2-9955-47f4-8987-dad24128d84d))
+    (pin "2" (uuid 32102db3-e192-45e7-bcb9-a8a4c91de46e))
     (pin "3" (uuid a54ad9e4-b0c8-42db-a7ef-3ba3a4134562))
     (pin "4" (uuid bef45e9c-4e2d-4ea5-85aa-4ab71a093c8a))
     (instances
@@ -5627,8 +5627,8 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8ca6a527-0440-408a-97d8-caeacfd48fb1))
-    (pin "3" (uuid fefda979-3a89-4891-a8e2-9154f20fe8e9))
     (pin "2" (uuid 3d6bb649-ad6c-46ae-a184-6efd1daff73d))
+    (pin "3" (uuid fefda979-3a89-4891-a8e2-9154f20fe8e9))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
@@ -5704,8 +5704,8 @@
     (property "Datasheet" "~" (at 48.26 76.2 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 28695de6-91b5-45fe-9e5a-486d4974049c))
     (pin "1" (uuid de59cf8f-1294-4987-9f12-70eb1dc6d604))
+    (pin "2" (uuid 28695de6-91b5-45fe-9e5a-486d4974049c))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"

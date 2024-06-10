@@ -7498,14 +7498,14 @@
     (property "Datasheet" "LM66200DRLR" (at 127 105.41 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
+    (pin "1" (uuid 84282fd9-4fb9-4484-bee3-afc072ac4bd2))
+    (pin "2" (uuid 4d245db5-a435-43a0-b4b8-1de160715b7a))
+    (pin "3" (uuid 2b4c15d9-1777-4212-9965-918b82e0bc98))
+    (pin "5" (uuid 9d918c5f-82ae-4078-b831-d960a108bea4))
     (pin "6" (uuid e9cc4655-a1b1-4b30-a0f6-7a43ff1753f0))
     (pin "7" (uuid 474a0a78-6053-4513-8f2e-09414f45a11f))
-    (pin "3" (uuid 2b4c15d9-1777-4212-9965-918b82e0bc98))
-    (pin "2" (uuid 4d245db5-a435-43a0-b4b8-1de160715b7a))
     (pin "8" (uuid 6b4be326-57bf-4501-af83-00f38185cfe5))
-    (pin "5" (uuid 9d918c5f-82ae-4078-b831-d960a108bea4))
     (pin "4" (uuid 81d25dd7-632e-4d88-bc46-76ce1db1fa9a))
-    (pin "1" (uuid 84282fd9-4fb9-4484-bee3-afc072ac4bd2))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -7555,8 +7555,8 @@
     (property "Datasheet" "~" (at 213.36 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 8475fada-4950-4c6a-802f-cfb73ec1b046))
     (pin "1" (uuid 506fdde9-ab23-4763-ab92-0504a03117ec))
+    (pin "2" (uuid 8475fada-4950-4c6a-802f-cfb73ec1b046))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -7706,10 +7706,10 @@
     (property "Datasheet" "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819" (at 223.52 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "3" (uuid d7014d19-c249-4c4c-942c-b436df97dd5e))
-    (pin "2" (uuid cae7f602-badf-4f98-b14c-46a20952b006))
-    (pin "4" (uuid 0fbc499e-e3de-4ba2-9e4e-e4a4f0678aad))
     (pin "1" (uuid bd927340-ee73-43bc-86c8-d01b612dca6e))
+    (pin "2" (uuid cae7f602-badf-4f98-b14c-46a20952b006))
+    (pin "3" (uuid d7014d19-c249-4c4c-942c-b436df97dd5e))
+    (pin "4" (uuid 0fbc499e-e3de-4ba2-9e4e-e4a4f0678aad))
     (pin "5" (uuid 08a1bd4b-9666-48c3-b36a-69d7319df2d7))
     (instances
       (project "800+"
@@ -7918,14 +7918,14 @@
     (property "Datasheet" "LM66200DRLR" (at 132.08 40.64 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (pin "5" (uuid e4be5aa4-64a1-49e0-a65b-c061edd195a7))
-    (pin "8" (uuid c04bf634-a02a-4939-91cc-af1888eb4f6a))
     (pin "1" (uuid 3460b66e-7caf-4a2e-b5d9-491e98ec07ad))
+    (pin "2" (uuid 89bb15dc-1308-4c7c-b4d4-db138a7de3b6))
     (pin "3" (uuid 15734ec6-a87b-43c9-acca-1a2c12297657))
-    (pin "4" (uuid cd324b69-fe83-44bd-acce-4545a6ca793c))
+    (pin "5" (uuid e4be5aa4-64a1-49e0-a65b-c061edd195a7))
     (pin "6" (uuid 4ebe00a5-d328-4d59-b5ed-6ab90175a970))
     (pin "7" (uuid ca0d4adf-3474-47a1-b1cf-9368cddf5084))
-    (pin "2" (uuid 89bb15dc-1308-4c7c-b4d4-db138a7de3b6))
+    (pin "8" (uuid c04bf634-a02a-4939-91cc-af1888eb4f6a))
+    (pin "4" (uuid cd324b69-fe83-44bd-acce-4545a6ca793c))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -7950,8 +7950,8 @@
     (property "Datasheet" "~" (at 207.01 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid a4fab4eb-4abc-44d9-a2b6-f478f3900c3f))
     (pin "1" (uuid b44227c8-2395-4d7e-afd7-4be8e68a8595))
+    (pin "2" (uuid a4fab4eb-4abc-44d9-a2b6-f478f3900c3f))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
