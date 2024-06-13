@@ -1,4 +1,4 @@
-21756091627835012
+21761246278423169
 880+
 2inch_LCD
 
@@ -35,6 +35,13 @@ C265_reverse_mount_led
 2
 2
 880+
+C265_reverse_mount_led_DRC
+
+
+0
+2
+2
+880+
 ESP_TestPad
 
 
@@ -55,6 +62,20 @@ IR_led
 0
 2
 2
+880+
+SK6812-MINI-E
+
+
+0
+4
+4
+880+
+TDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.4mm
+TDFN, 8 Pin (https://pdfserv.maximintegrated.com/package_dwgs/21-0168.PDF), generated with kicad-footprint-generator ipc_noLead_generator.py
+TDFN NoLead
+0
+13
+9
 880+
 VEML7700
 VEML7700

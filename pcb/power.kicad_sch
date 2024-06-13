@@ -1737,6 +1737,9 @@
     )
   )
 
+  (junction (at 96.52 175.26) (diameter 0) (color 0 0 0 0)
+    (uuid 2864114c-7e90-4bf5-ad5d-8bf6f90b53a7)
+  )
   (junction (at 38.1 156.21) (diameter 0) (color 0 0 0 0)
     (uuid 329c1d06-4877-4ff9-b4f6-911db4b75d46)
   )
@@ -1766,6 +1769,9 @@
   )
   (junction (at 81.915 86.995) (diameter 0) (color 0 0 0 0)
     (uuid 96e3dc06-5e9a-40db-badb-21bed803b91a)
+  )
+  (junction (at 96.52 185.42) (diameter 0) (color 0 0 0 0)
+    (uuid 97561a8a-9324-463c-b828-d6048bff6d2b)
   )
   (junction (at 73.025 97.155) (diameter 0) (color 0 0 0 0)
     (uuid a5328348-1a58-45da-ac72-caa8b6b30f3a)
@@ -1814,6 +1820,10 @@
     (stroke (width 0) (type default))
     (uuid 07945ca4-b054-495f-b93d-b6339fd7f3ae)
   )
+  (wire (pts (xy 250.19 45.72) (xy 247.65 45.72))
+    (stroke (width 0) (type default))
+    (uuid 094ff1f6-58d8-4d07-9574-72acfc0867ea)
+  )
   (wire (pts (xy 238.76 45.72) (xy 238.76 48.895))
     (stroke (width 0) (type default))
     (uuid 09d1c61a-b3c9-4dff-9280-ee77dc9a72fc)
@@ -1821,10 +1831,6 @@
   (wire (pts (xy 245.11 130.81) (xy 245.11 132.08))
     (stroke (width 0) (type default))
     (uuid 0ec9bfce-db70-4408-8087-61de065d412e)
-  )
-  (wire (pts (xy 199.39 45.72) (xy 200.66 45.72))
-    (stroke (width 0) (type default))
-    (uuid 10b90a99-177f-4255-9127-ae9fa9909311)
   )
   (wire (pts (xy 225.425 134.62) (xy 228.6 134.62))
     (stroke (width 0) (type default))
@@ -1862,6 +1868,10 @@
     (stroke (width 0) (type default))
     (uuid 23c485cc-c1d6-4524-b978-acb2a5bd2ace)
   )
+  (wire (pts (xy 110.49 185.42) (xy 96.52 185.42))
+    (stroke (width 0) (type default))
+    (uuid 240594d8-f45c-4ca7-8962-f0613808e09b)
+  )
   (wire (pts (xy 33.655 103.505) (xy 41.275 103.505))
     (stroke (width 0) (type default))
     (uuid 26022361-b179-4a79-bfcf-80b26ac1c103)
@@ -1878,9 +1888,13 @@
     (stroke (width 0) (type default))
     (uuid 2f2698a2-c266-450f-a5ef-24631719983f)
   )
-  (wire (pts (xy 172.72 45.72) (xy 191.77 45.72))
+  (wire (pts (xy 172.72 45.72) (xy 200.66 45.72))
     (stroke (width 0) (type default))
     (uuid 2f5b5e04-e61e-40b7-8866-1d5ed8e52ff3)
+  )
+  (wire (pts (xy 96.52 175.26) (xy 96.52 176.53))
+    (stroke (width 0) (type default))
+    (uuid 2fb509d0-6e00-4fbb-83cd-1c2d1f0acc3f)
   )
   (wire (pts (xy 81.915 99.695) (xy 81.915 86.995))
     (stroke (width 0) (type default))
@@ -1986,6 +2000,10 @@
     (stroke (width 0) (type default))
     (uuid 669b5d86-a3cc-4a81-a400-55f80c25eee0)
   )
+  (wire (pts (xy 110.49 176.53) (xy 110.49 175.26))
+    (stroke (width 0) (type default))
+    (uuid 68a30bee-e5a7-471a-9a8e-d24a9bd8cb4a)
+  )
   (wire (pts (xy 62.23 49.53) (xy 64.77 49.53))
     (stroke (width 0) (type default))
     (uuid 698c8ca7-cc95-4cf8-92e5-4492f97c8902)
@@ -1993,6 +2011,10 @@
   (wire (pts (xy 231.14 48.26) (xy 234.95 48.26))
     (stroke (width 0) (type default))
     (uuid 6e040d86-699d-42f5-b9eb-fbdef6d452b7)
+  )
+  (wire (pts (xy 96.52 185.42) (xy 96.52 186.69))
+    (stroke (width 0) (type default))
+    (uuid 6f88f80e-16fc-4958-b59a-daa33c5570b4)
   )
   (wire (pts (xy 217.17 132.08) (xy 217.17 133.35))
     (stroke (width 0) (type default))
@@ -2098,6 +2120,10 @@
     (stroke (width 0) (type default))
     (uuid 9e4bf350-2d1f-4695-8246-b981fb26804f)
   )
+  (wire (pts (xy 110.49 184.15) (xy 110.49 185.42))
+    (stroke (width 0) (type default))
+    (uuid 9ff989e3-73bd-40bb-b590-a865b0b233b3)
+  )
   (wire (pts (xy 223.52 55.88) (xy 223.52 59.69))
     (stroke (width 0) (type default))
     (uuid a0764907-c701-4eee-9fa0-6d773d3a4163)
@@ -2146,7 +2172,7 @@
     (stroke (width 0) (type default))
     (uuid b923ddaf-2885-49ee-85b0-9fa8938a6bbc)
   )
-  (wire (pts (xy 261.62 45.72) (xy 247.65 45.72))
+  (wire (pts (xy 261.62 45.72) (xy 257.81 45.72))
     (stroke (width 0) (type default))
     (uuid bad2b0c7-71b1-48ee-807b-cbb300d4d1cc)
   )
@@ -2234,9 +2260,17 @@
     (stroke (width 0) (type default))
     (uuid f4cca515-e635-4944-a80f-67db23aa4844)
   )
+  (wire (pts (xy 96.52 184.15) (xy 96.52 185.42))
+    (stroke (width 0) (type default))
+    (uuid f5e3b43b-307c-426a-a1bf-4f388e72f03e)
+  )
   (wire (pts (xy 245.11 132.08) (xy 257.81 132.08))
     (stroke (width 0) (type default))
     (uuid f5fb54ac-61d3-45b3-9ed2-47f062638cf3)
+  )
+  (wire (pts (xy 96.52 175.26) (xy 110.49 175.26))
+    (stroke (width 0) (type default))
+    (uuid f6db1bad-e779-408b-aced-acfdc095772b)
   )
   (wire (pts (xy 61.595 97.155) (xy 73.025 97.155))
     (stroke (width 0) (type default))
@@ -18189,7 +18223,7 @@
     (property "Datasheet" "" (at 51.435 108.585 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fb7ca917-aef4-46bd-9a1f-a01274c6d5e0))
+    (pin "1" (uuid 97aae2d4-b90b-43ad-9f8b-e6420cd6e24d))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18214,7 +18248,7 @@
     (property "Datasheet" "" (at 245.11 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 40542472-4476-434d-a79f-8b3a78fdf7de))
+    (pin "1" (uuid e8476bc7-c551-40cb-961a-67dbe87e4e14))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18239,7 +18273,7 @@
     (property "Datasheet" "" (at 217.17 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c3c4318f-f01a-46ea-b5aa-c107adbc0f0c))
+    (pin "1" (uuid 7b2f2701-d1df-4573-a6cb-6a52120474e3))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18252,10 +18286,10 @@
   (symbol (lib_id "Device:D_TVS") (at 238.76 52.705 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 116deec6-4cd5-4136-bf09-4ab690e8c548)
-    (property "Reference" "D35" (at 241.3 51.435 90)
+    (property "Reference" "TVS1" (at 241.3 52.07 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "P6SMB12CA" (at 241.3 53.975 90)
+    (property "Value" "P6SMB12CA" (at 241.3 54.61 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Diode_SMD:D_SMB" (at 238.76 52.705 0)
@@ -18264,12 +18298,12 @@
     (property "Datasheet" "~" (at 238.76 52.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6aa08d6a-93f9-42e2-b337-e7e9ca414b08))
-    (pin "2" (uuid 3149b41c-cc73-4f7e-ab70-c475b51c1c1c))
+    (pin "1" (uuid 82d4aeca-2e1b-4b41-82ff-eab16b489449))
+    (pin "2" (uuid bbb6c2a5-af25-4067-945c-1f2f55510d79))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
-          (reference "D35") (unit 1)
+          (reference "TVS1") (unit 1)
         )
       )
     )
@@ -18290,7 +18324,7 @@
     (property "Datasheet" "" (at 59.69 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 54738ce9-51f1-4a36-9e41-09a7bc111040))
+    (pin "1" (uuid 46fbede4-950e-4efd-9cb5-d546203160c9))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18315,7 +18349,7 @@
     (property "Datasheet" "" (at 217.17 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 01973246-c46c-4d2c-9643-7c2997604e1d))
+    (pin "1" (uuid 8bb40eb3-fbf3-43fa-8de4-483458a35e52))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18340,7 +18374,7 @@
     (property "Datasheet" "" (at 73.025 95.885 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c9ef25af-ab06-45f5-8765-cb787126cfd3))
+    (pin "1" (uuid 9dcc98cf-d6d4-457c-a741-fae10d3417fb))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18365,7 +18399,7 @@
     (property "Datasheet" "" (at 257.81 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4f75991f-a65f-4ad2-bec1-0479e513bb79))
+    (pin "1" (uuid 4904ee13-db6a-4f89-82d3-b0bc81157e24))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18390,7 +18424,7 @@
     (property "Datasheet" "" (at 217.17 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 09eb5674-1d06-409f-b517-86dcb178ef2c))
+    (pin "1" (uuid 870062ea-7f3f-419f-adcb-601b4ef045c6))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18415,8 +18449,8 @@
     (property "Datasheet" "https://www.mouser.com/ProductDetail/Bourns/MF-MSMF030-2?qs=4Enggx7jqVwuh3vnyeU3lA%3D%3D" (at 110.49 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 72db2a9b-4db4-419f-af00-2eecdebce708))
-    (pin "2" (uuid 4d2c6219-aa5c-494c-b80c-bd9752696e5b))
+    (pin "1" (uuid a9a0d21c-714a-4cd7-b907-51fc9e5439a1))
+    (pin "2" (uuid 4a786b90-588d-40a3-be1c-4b69bb7abb58))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18441,8 +18475,8 @@
     (property "Datasheet" "~" (at 45.72 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1266532f-73f0-406d-a111-b70485f3039a))
-    (pin "2" (uuid b64bc1ae-10c0-4f31-84be-73415d64bade))
+    (pin "1" (uuid 6b27ecba-f4a3-4f06-bb2c-288ea5b13c37))
+    (pin "2" (uuid 5f133f15-c835-42b7-9fb3-f405aee2d687))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18467,7 +18501,7 @@
     (property "Datasheet" "" (at 25.4 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 78546352-4f2f-4ef5-8f97-50304dd5b53e))
+    (pin "1" (uuid 9317b5d2-4731-4b1b-81d7-4392aaf9c6d3))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18486,14 +18520,14 @@
     (property "Value" "2.2uF" (at 220.98 100.33 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric" (at 217.17 113.03 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 217.17 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf" (at 218.44 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9b2d5721-606e-491e-8902-46bc24820e1c))
-    (pin "2" (uuid a85ceb76-8539-4f91-8e45-ea621852eb87))
+    (pin "1" (uuid 8fac1a8b-e214-4df6-a339-35576eb71341))
+    (pin "2" (uuid ba0669e4-bd1d-42bd-b4c8-a1ba694f886e))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18518,7 +18552,7 @@
     (property "Datasheet" "" (at 85.09 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ddffc0a5-e87e-43a4-85ed-8a938b3da076))
+    (pin "1" (uuid ba51ce3f-9a26-44ad-841f-f1105c26c3b0))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18543,7 +18577,7 @@
     (property "Datasheet" "" (at 217.17 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid be4b9602-c0be-42c0-a15b-3cf15c58d4d5))
+    (pin "1" (uuid 1b82617d-e2f7-41b8-90bf-8ae80a7617d7))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18553,23 +18587,23 @@
     )
   )
 
-  (symbol (lib_id "Device:Polyfuse") (at 195.58 45.72 270) (unit 1)
+  (symbol (lib_id "Device:Polyfuse") (at 254 45.72 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 33109180-0168-4558-be85-5ff8525ee484)
-    (property "Reference" "F2" (at 195.58 40.005 90)
+    (property "Reference" "F2" (at 254 40.005 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Polyfuse" (at 195.58 42.3164 90)
+    (property "Value" "Polyfuse" (at 254 42.3164 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder" (at 190.5 46.99 0)
+    (property "Footprint" "Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder" (at 248.92 46.99 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Datasheet" "https://www.mouser.com/ProductDetail/Bourns/MF-MSMF030-2?qs=4Enggx7jqVwuh3vnyeU3lA%3D%3D" (at 195.58 45.72 0)
+    (property "Datasheet" "https://www.mouser.com/ProductDetail/Bourns/MF-MSMF030-2?qs=4Enggx7jqVwuh3vnyeU3lA%3D%3D" (at 254 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1b53809b-5ee6-43fb-bdae-2d8f07fbb3c9))
-    (pin "2" (uuid 420c7cb3-8140-455a-a778-044ab6fd0a78))
+    (pin "1" (uuid 2dba93fb-50c6-4635-9776-df3739470e13))
+    (pin "2" (uuid 495c44cf-27c6-4cbe-801e-c1e7b018f37e))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18594,7 +18628,7 @@
     (property "Datasheet" "" (at 236.22 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5a22abad-26fe-4df1-b5c2-998ebb52b35a))
+    (pin "1" (uuid 4bd7fac0-3bc0-42a9-a870-647c56ceeb1f))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18613,7 +18647,7 @@
     (property "Value" "MAX17048" (at 51.7241 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Semiconductor-Standard:DFN-8" (at 49.53 165.1 0)
+    (property "Footprint" "880+:TDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.4mm" (at 49.53 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX17048-MAX17049.pdf" (at 49.53 167.64 0)
@@ -18622,15 +18656,15 @@
     (property "PROD_ID" "IC-12551" (at 49.53 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 198bbe68-326c-472f-bba6-17ee462b78cf))
-    (pin "2" (uuid a44124fd-ce49-43d7-80ab-819c83095184))
-    (pin "3" (uuid c9de9c0d-f606-4f0f-92c0-c50ea62d769a))
-    (pin "4" (uuid 889f7f4b-74df-48f4-bba6-e6ea013ceb8f))
-    (pin "5" (uuid 18062124-dd91-43a7-a63f-003e155e116f))
-    (pin "6" (uuid e97ed270-e8f4-473d-8152-0fbea3ff786d))
-    (pin "7" (uuid b228370e-f529-4b24-9b5f-63404060b644))
-    (pin "8" (uuid 83a6cda0-b8c2-45fe-8896-8239fd2fe351))
-    (pin "9" (uuid 01262727-9a8f-4bc0-9bd7-f4d8d37814ec))
+    (pin "1" (uuid 74ca6ac5-8bcc-4e54-a34c-aa0efee608e8))
+    (pin "2" (uuid 1e2cc3a2-1b63-4a32-8092-e58032c5aec2))
+    (pin "3" (uuid c8108cde-a28c-46bc-86af-796ac8af6945))
+    (pin "4" (uuid fbbd29fe-2f6b-4b1e-bb59-d36a529252a6))
+    (pin "5" (uuid 90f7a8fe-0997-46d7-85a7-b38ee8864ed6))
+    (pin "6" (uuid cf29aa01-0b87-49f8-86da-29e3b994c076))
+    (pin "7" (uuid 3c976552-ba88-42f4-8adb-ac0c1454eb7b))
+    (pin "8" (uuid 5f7d9a42-5982-4df2-a3d7-3ed29aaa7b16))
+    (pin "9" (uuid 2520a14f-2850-404a-9d1e-fb8c94cc6a9b))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18655,7 +18689,7 @@
     (property "Datasheet" "" (at 172.72 48.26 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid 9f08026e-435d-40e6-bfd3-07de30aa6823))
+    (pin "1" (uuid 51b8a2fd-82fb-42bf-92d9-de08b8714701))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18680,7 +18714,7 @@
     (property "Datasheet" "" (at 257.81 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d31b11b2-66df-4823-89b6-6b33ceb91746))
+    (pin "1" (uuid d9b58fc5-1834-4541-a535-994f163ee2d9))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18699,14 +18733,14 @@
     (property "Value" "2.2uF" (at 220.98 135.89 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric" (at 217.17 148.59 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 217.17 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf" (at 218.44 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 16e727de-d62e-47f8-a68d-41408c63231d))
-    (pin "2" (uuid 3e4dbf83-b8eb-44e3-8021-b26118656703))
+    (pin "1" (uuid e45c5d2f-0dd7-46b5-a629-14d14304e1b4))
+    (pin "2" (uuid 545de0e0-e9e9-4e9b-9d3d-3afad2ed6d1e))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18731,7 +18765,7 @@
     (property "Datasheet" "" (at 38.1 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2b14cdfa-2a89-482b-b77b-b04a4c0a83dd))
+    (pin "1" (uuid 8bfd1cbd-63a8-4de4-9987-9a92bec962b9))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18756,7 +18790,7 @@
     (property "Datasheet" "" (at 73.025 107.315 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e518369e-4c84-48c5-af4d-927935734fa8))
+    (pin "1" (uuid 81751ee1-2daa-4c25-b33e-19685b48f115))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18781,11 +18815,36 @@
     (property "Datasheet" "" (at 81.915 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4b9c70c2-f6b2-4df6-ac75-d27bcfd76153))
+    (pin "1" (uuid fda65758-79e6-4a83-bde1-a13d8df4cd1f))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
           (reference "#PWR060") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "SparkFun-PowerSymbol:GND") (at 96.52 186.69 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 51dfcb66-8cd7-4866-a964-22094fbd9e9d)
+    (property "Reference" "#PWR076" (at 96.52 193.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 96.52 190.5 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 96.52 186.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 96.52 186.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid be845bda-5b9d-4f5c-af4c-3d69a2ff4768))
+    (instances
+      (project "800+"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
+          (reference "#PWR076") (unit 1)
         )
       )
     )
@@ -18800,7 +18859,7 @@
     (property "Value" "RT9080-3.3" (at 236.22 128.27 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "SparkFun-Semiconductor-Standard:SOT23-5" (at 236.22 146.05 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 236.22 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.richtek.com/SaveDownload.aspx?specid=RT9080" (at 236.22 148.59 0)
@@ -18818,11 +18877,11 @@
     (property "Iq" "4µA" (at 236.22 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 82ce92c1-4fbc-48f9-8ac5-186327ff2a4f))
-    (pin "2" (uuid c4c73b8f-5aab-4658-ac4d-f8877bbefa88))
-    (pin "3" (uuid 71db7c70-19a1-4769-ab34-64aa7e8d5929))
-    (pin "4" (uuid 40979442-a4ec-4bb8-98ca-b70301d24610))
-    (pin "5" (uuid 23d6ec65-0197-44bb-9513-ae3d038be73d))
+    (pin "1" (uuid 1cb6c3b8-65ea-44c5-b192-8468cfee61d2))
+    (pin "2" (uuid 924b5f30-48ac-47f8-965d-9d1e46ff81a6))
+    (pin "3" (uuid f36e4a7f-b150-4a22-b40d-0a449ba1187c))
+    (pin "4" (uuid a4b17d87-c0e1-4602-b959-93fa05c6eff4))
+    (pin "5" (uuid 6b6ba01f-3355-4a42-bca4-b99d0e728bf6))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18847,7 +18906,7 @@
     (property "Datasheet" "" (at 125.73 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0af24921-b407-48da-843a-3dc59e390314))
+    (pin "1" (uuid 03ad6ffb-a207-46a1-bbe4-3be35fc9eb3f))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18872,7 +18931,7 @@
     (property "Datasheet" "" (at 116.84 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1347176d-b31d-48c8-9266-835f3944d8fd))
+    (pin "1" (uuid 022d9cb3-3f45-4eb5-8957-fc4535c8b081))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18897,9 +18956,9 @@
     (property "Datasheet" "~" (at 90.805 99.695 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 839676f3-dd3c-40ab-afa1-cb5a8dafcafa))
-    (pin "2" (uuid 04b29d19-d82f-498e-9d14-09f31a7ee0aa))
-    (pin "3" (uuid 0fc9adc2-594f-4fa5-9d09-4fcfb586539f))
+    (pin "1" (uuid e246c06c-e42b-4303-8aac-36726390f483))
+    (pin "2" (uuid 563b97e8-e14e-4486-995c-c84c534eb206))
+    (pin "3" (uuid 5410b069-a1c4-49cb-bad1-3c8d885031a2))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18924,7 +18983,7 @@
     (property "Datasheet" "" (at 167.64 113.03 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid 2dceacb8-be57-413b-9027-a3d6f4bddec1))
+    (pin "1" (uuid eb135dab-227e-4713-a28c-f295dd5d7948))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18943,7 +19002,7 @@
     (property "Value" "MCP73831" (at 52.705 94.615 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Semiconductor-Standard:SOT23-5" (at 51.435 111.125 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 51.435 111.125 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" (at 51.435 113.665 0)
@@ -18952,11 +19011,11 @@
     (property "PROD_ID" "IC-09995" (at 51.435 116.205 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 24dfdad1-acd6-4e46-be1c-194a870b6b40))
-    (pin "2" (uuid 51484eff-f9d2-4013-ad76-be7607a2f706))
-    (pin "3" (uuid 80c6140e-9886-429e-a2c1-aaddbae54be6))
-    (pin "4" (uuid 0ea45976-b950-4daf-af39-1c29658e6740))
-    (pin "5" (uuid 85f370cd-515a-4522-823d-49c22341b25d))
+    (pin "1" (uuid a9c14481-548b-4782-bc98-56400187a105))
+    (pin "2" (uuid 7807a7e6-601f-4d21-b7bd-f77c23f754b9))
+    (pin "3" (uuid 9a2670dd-8bfc-4ebc-97ab-e10f89ab3334))
+    (pin "4" (uuid 35827ceb-73ba-4305-9dea-6f7bcea76d35))
+    (pin "5" (uuid 4ff22691-5891-429a-acdf-d2ea9a83dbc8))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18981,7 +19040,7 @@
     (property "Datasheet" "" (at 247.65 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d671e67f-d75d-4ad5-9942-975c1ed7800d))
+    (pin "1" (uuid 90a727bb-c075-49a9-b9b2-e8d072dda892))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -18997,7 +19056,7 @@
     (property "Reference" "C5" (at 111.125 177.8 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10u" (at 111.125 182.88 0)
+    (property "Value" ".1u" (at 111.125 182.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 111.4552 184.15 0)
@@ -19006,8 +19065,8 @@
     (property "Datasheet" "" (at 110.49 180.34 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid 3acbb1a4-6deb-4b42-8cee-b78433b1ae19))
-    (pin "2" (uuid cc85a1e8-8d52-497e-8707-d06453680116))
+    (pin "1" (uuid 5042b1bf-4784-48ba-9fa5-c0e728b25a08))
+    (pin "2" (uuid d8d89117-af09-4be5-b589-92f731f2037c))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19032,7 +19091,7 @@
     (property "Datasheet" "" (at 62.865 113.665 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 36312050-1e99-4aee-b980-2916f7a12148))
+    (pin "1" (uuid 52f6069b-099a-41f9-8117-0d722c883d89))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19057,7 +19116,7 @@
     (property "Datasheet" "" (at 170.18 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 675dc069-0a95-44ee-898f-3c40325c28fe))
+    (pin "1" (uuid cd3bd049-8fe4-48ee-a780-93fdad12b4a2))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19082,8 +19141,8 @@
     (property "Datasheet" "~" (at 81.915 78.105 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 534fad53-f598-4d8d-9553-8fd64aa48921))
-    (pin "2" (uuid 356211f9-da8c-4ad1-b396-ea60fbabb319))
+    (pin "1" (uuid cf3de7bf-eb0b-46d3-a710-3896d3f9927a))
+    (pin "2" (uuid 53453c79-ff4b-4d75-a417-69a245d25af9))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19102,14 +19161,14 @@
     (property "Value" "4.7uF" (at 129.54 179.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Capacitor:C_0603_1608Metric" (at 125.73 191.77 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 125.73 191.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf" (at 125.73 196.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9dd3f607-31e3-44a3-8891-a44e830822d6))
-    (pin "2" (uuid d0df8f76-b93a-4d62-8dff-cd39e80f4100))
+    (pin "1" (uuid f796edd5-b269-461d-a0c9-ea62dc830012))
+    (pin "2" (uuid a225753e-65eb-4351-8c41-ebc63729772d))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19134,7 +19193,7 @@
     (property "Datasheet" "" (at 120.65 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid baaa47ad-ec6b-44f2-9532-2a86a158c753))
+    (pin "1" (uuid 003018c9-5546-4943-8e10-8537cd95e557))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19153,7 +19212,7 @@
     (property "Value" "RT9080-3.3" (at 236.22 92.71 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "SparkFun-Semiconductor-Standard:SOT23-5" (at 236.22 110.49 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 236.22 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.richtek.com/SaveDownload.aspx?specid=RT9080" (at 236.22 113.03 0)
@@ -19171,11 +19230,11 @@
     (property "Iq" "4µA" (at 236.22 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c1047d6d-e91c-4dac-83f1-ddbfdcbfc445))
-    (pin "2" (uuid 64de87f4-0a06-431a-bca6-27b7182600f0))
-    (pin "3" (uuid 86bd91c4-0a91-4616-bb42-9db2de07e817))
-    (pin "4" (uuid 55ad2dc9-a16a-4157-a108-d16e6a1d7386))
-    (pin "5" (uuid ce981966-c3dd-4842-bf32-678c8fff3422))
+    (pin "1" (uuid af40dfc2-4729-4721-b61a-4bc0c05494de))
+    (pin "2" (uuid 52cc7831-9212-4ebe-97ad-de58bf7b3b90))
+    (pin "3" (uuid 051a84d2-3e11-4a7f-a02e-6613c57f98a1))
+    (pin "4" (uuid 631d178c-613c-4244-861e-b704911d58a7))
+    (pin "5" (uuid eebb67ae-fe33-4a02-afbc-63542e7f11bb))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19194,14 +19253,14 @@
     (property "Value" "1.0uF" (at 261.62 135.89 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric" (at 257.81 148.59 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 257.81 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf" (at 257.81 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5b90fbe3-266d-42a4-a0b1-0c85806cb326))
-    (pin "2" (uuid e0f6bdcb-6709-48d3-8158-a65422db3adf))
+    (pin "1" (uuid af548ff9-4c54-4d15-a26c-4ace66bb6279))
+    (pin "2" (uuid feaac590-b052-4491-a35d-aeaed154ee26))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19226,7 +19285,7 @@
     (property "Datasheet" "" (at 173.99 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 34986c06-47c8-4cbf-aa2e-8326ee925ec6))
+    (pin "1" (uuid 6b895cb2-70c0-4ea0-8fc1-14609f84d5b0))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19251,8 +19310,8 @@
     (property "Datasheet" "~" (at 62.865 108.585 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 012b326a-4211-45bc-b535-3d9b221b8f83))
-    (pin "2" (uuid 3fc51d08-b341-426c-9f94-50339145ce64))
+    (pin "1" (uuid 4c981678-2f4d-4cfc-a4fc-612af41bf6a8))
+    (pin "2" (uuid d1bc9fc2-0c34-460c-a134-95d498e8fe10))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19277,7 +19336,7 @@
     (property "Datasheet" "" (at 245.11 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8443dd75-9114-477a-a613-d881799d7b2f))
+    (pin "1" (uuid 8a9425b7-794c-43fc-9a1c-72450eec7d1c))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19296,14 +19355,14 @@
     (property "Value" "0.1uF" (at 29.21 151.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric" (at 25.4 163.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 25.4 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf" (at 25.4 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 33d9ade3-a3cd-4a64-9f5c-17b960964f18))
-    (pin "2" (uuid c8e3cd0f-9088-4148-9359-b8405974babb))
+    (pin "1" (uuid dbb7edbb-3b43-4963-90d5-c58d3fe13ec5))
+    (pin "2" (uuid ac3923b8-21a3-4e86-94ca-432cbde96595))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19328,7 +19387,7 @@
     (property "Datasheet" "" (at 132.08 48.26 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid c0d5c47e-9e21-4855-ac66-9a593e936e16))
+    (pin "1" (uuid 818473a9-9dd6-4a27-a792-3bdbfe32768c))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19353,12 +19412,12 @@
     (property "Datasheet" "~" (at 36.83 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ed186c61-7749-4c64-b715-d668302fe56c))
-    (pin "2" (uuid 9b0a4db7-eec4-44aa-9233-0375c78b1cef))
-    (pin "3" (uuid 9fae98bc-b350-452f-abd0-9ff6a911ff5c))
-    (pin "4" (uuid 3bc1b043-6633-47a8-83a8-8da4be317457))
-    (pin "5" (uuid 9c4f5e93-5f2c-4ed0-a876-b23c08e0cbf7))
-    (pin "6" (uuid a43feaf8-a28e-4b76-a1c8-d73af5f5f315))
+    (pin "1" (uuid f4ec9d44-78b9-4180-bd9d-3c6b31949c72))
+    (pin "2" (uuid 153e57d3-c99b-487e-a4d0-855eb663250d))
+    (pin "3" (uuid 2266a04f-90d6-451a-9a00-abeec6be4467))
+    (pin "4" (uuid 8ddf411c-bcf6-489e-9d56-d619b3cce05c))
+    (pin "5" (uuid 1d75070e-9cca-4b90-93f0-b4aa5b0b7274))
+    (pin "6" (uuid e808f90b-dd16-4281-9e8c-57182bf9e7ac))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19377,14 +19436,14 @@
     (property "Value" "4.7uF" (at 76.835 103.505 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric" (at 73.025 113.665 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 73.025 113.665 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf" (at 73.025 118.745 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f7ae0177-6fd4-4f78-b8da-fe0b78c6463b))
-    (pin "2" (uuid 6e4d76ac-9a05-486f-8e87-a2256173a513))
+    (pin "1" (uuid 4f066904-d9d4-4d8a-bb83-c2f816723bdf))
+    (pin "2" (uuid d1e55ed5-eb13-4ad0-94eb-0c95e8abfcac))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19409,7 +19468,7 @@
     (property "Datasheet" "" (at 245.11 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5f2fb9ed-9833-4674-93da-eebb4d07b3fa))
+    (pin "1" (uuid 4e44fc80-f717-41dd-907b-297affe881ad))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19434,7 +19493,7 @@
     (property "Datasheet" "" (at 245.11 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 38223934-9a6e-479a-a0ee-a1a0fababf1d))
+    (pin "1" (uuid 1c996736-336b-4d62-9a53-11287405c2a7))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19459,11 +19518,36 @@
     (property "Datasheet" "" (at 132.08 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid 8d123de1-9265-496c-ab5a-6c5e760177f6))
+    (pin "1" (uuid 1b0e22dd-d6c7-4896-aa75-4b3346b7e867))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
           (reference "#PWR024") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 125.73 175.26 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b26b145a-7e54-4422-85f7-77ee01c5ee4c)
+    (property "Reference" "#PWR077" (at 125.73 179.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 125.73 172.72 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 125.73 175.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 125.73 175.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e05ffe1b-a1e1-4077-b640-8508057ea03c))
+    (instances
+      (project "800+"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
+          (reference "#PWR077") (unit 1)
         )
       )
     )
@@ -19478,20 +19562,20 @@
     (property "Value" "LM66200DRLR" (at 147.32 97.79 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "SOT-5X3_DRL_TEX" (at 127 105.41 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-583-8" (at 127 105.41 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "LM66200DRLR" (at 127 105.41 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (pin "1" (uuid 84282fd9-4fb9-4484-bee3-afc072ac4bd2))
-    (pin "2" (uuid 4d245db5-a435-43a0-b4b8-1de160715b7a))
-    (pin "3" (uuid 2b4c15d9-1777-4212-9965-918b82e0bc98))
-    (pin "5" (uuid 9d918c5f-82ae-4078-b831-d960a108bea4))
-    (pin "6" (uuid e9cc4655-a1b1-4b30-a0f6-7a43ff1753f0))
-    (pin "7" (uuid 474a0a78-6053-4513-8f2e-09414f45a11f))
-    (pin "8" (uuid 6b4be326-57bf-4501-af83-00f38185cfe5))
-    (pin "4" (uuid 81d25dd7-632e-4d88-bc46-76ce1db1fa9a))
+    (pin "1" (uuid 97ecae77-facb-445c-83a4-a6a40b394170))
+    (pin "2" (uuid f2c6ce18-7165-4c79-97e3-a1be6cd0a1d3))
+    (pin "3" (uuid 42d28000-0577-449d-8840-4c1d679d9638))
+    (pin "5" (uuid 6823bd4a-3768-49ae-922c-75d9e8dc14d2))
+    (pin "6" (uuid 90e48c95-2a4e-405c-b291-becd36f9fd1f))
+    (pin "7" (uuid e0b6c0b4-4293-4e75-80b0-2da1c7fd65eb))
+    (pin "8" (uuid 976222cf-d8f2-422c-82d4-45653f9ad317))
+    (pin "4" (uuid 8b166227-1fcf-4e1c-890a-a2226b892ef5))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19516,7 +19600,7 @@
     (property "Datasheet" "" (at 172.72 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5677fdbe-6b7a-48bc-be85-2d2559c1c44d))
+    (pin "1" (uuid 7431c38e-0739-4465-a91a-52d75da1d2ed))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19535,14 +19619,14 @@
     (property "Value" "R" (at 208.28 58.42 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 215.138 57.15 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 215.138 57.15 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 213.36 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 506fdde9-ab23-4763-ab92-0504a03117ec))
-    (pin "2" (uuid 8475fada-4950-4c6a-802f-cfb73ec1b046))
+    (pin "1" (uuid d7d88d45-b8d2-4f64-812b-c7e01d30783a))
+    (pin "2" (uuid 4186965b-568a-49d4-89ce-3329548698ec))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19567,7 +19651,7 @@
     (property "Datasheet" "" (at 25.4 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 86856e2d-44f3-4fbe-b3cd-f173f4fa6695))
+    (pin "1" (uuid 73e4dff5-3ea2-4fe1-aae0-a1bb5c3eb2c5))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19592,7 +19676,7 @@
     (property "Datasheet" "" (at 51.435 88.265 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f690e3e2-faef-443f-a9ce-d1468f7cd403))
+    (pin "1" (uuid 7a45d4b4-2c7f-4b6f-a6ff-e47fbbb57ea4))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19617,7 +19701,7 @@
     (property "Datasheet" "" (at 49.53 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 50db0c9c-55f2-4918-bbf1-dc91e1257832))
+    (pin "1" (uuid eb95b07c-d384-467b-8698-e4f3768fe15c))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19642,7 +19726,7 @@
     (property "Datasheet" "" (at 49.53 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d25df76d-5835-4290-b737-9ee641764dc7))
+    (pin "1" (uuid ce4e70bb-6918-49e9-9602-826c26254662))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19667,7 +19751,7 @@
     (property "Datasheet" "" (at 127 113.03 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid f1181e24-8ffc-4223-af6f-2f3c590e0b89))
+    (pin "1" (uuid 0e3fde71-34ab-47a3-bae3-52a26993b6a8))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19692,11 +19776,11 @@
     (property "Datasheet" "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819" (at 223.52 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bd927340-ee73-43bc-86c8-d01b612dca6e))
-    (pin "2" (uuid cae7f602-badf-4f98-b14c-46a20952b006))
-    (pin "3" (uuid d7014d19-c249-4c4c-942c-b436df97dd5e))
-    (pin "4" (uuid 0fbc499e-e3de-4ba2-9e4e-e4a4f0678aad))
-    (pin "5" (uuid 08a1bd4b-9666-48c3-b36a-69d7319df2d7))
+    (pin "1" (uuid 7046a053-c1d8-4c69-88b1-1529d09e69c2))
+    (pin "2" (uuid cc6c79ee-9fea-4432-9c02-dec9750dd884))
+    (pin "3" (uuid 2d1b7dbd-e47a-4a22-806f-bbb5c0314fd1))
+    (pin "4" (uuid 80b8ae7c-1da3-4945-8602-7437d3b54c4e))
+    (pin "5" (uuid 23d5d026-3b58-4d8e-8782-aef23dd1fa0f))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19721,8 +19805,8 @@
     (property "Datasheet" "" (at 96.52 180.34 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid 1d5924cc-ede9-482b-8c92-c1d2b74eccfe))
-    (pin "2" (uuid b07f201d-c49f-4a7c-bda9-b009bc43ef2b))
+    (pin "1" (uuid 6c254348-5251-49c5-8e7d-eebdc7be5980))
+    (pin "2" (uuid 7aee0b05-d99a-4261-b731-0ee90dedd85d))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19747,12 +19831,12 @@
     (property "Datasheet" "" (at 77.47 54.61 0)
       (effects (font (size 1.524 1.524)))
     )
-    (pin "1" (uuid f5708036-94ba-4bb1-aa3c-f47bf2b8de5a))
-    (pin "2" (uuid 5f04d8c0-5016-4187-b603-f656fdb89d59))
-    (pin "3" (uuid a81b144d-9859-4bcc-8e2b-864932fcc70b))
-    (pin "4" (uuid 0d1a2b81-7748-4e07-bcc4-93d4a3cef5e6))
-    (pin "5" (uuid 542a6df9-fa21-45f6-a879-2efb74139bfa))
-    (pin "6" (uuid 66a968e7-0142-40c8-92d8-048b81ab5f3c))
+    (pin "1" (uuid 5dc9351e-2519-4edc-8b4d-0a8263c6e7d2))
+    (pin "2" (uuid e106b6fa-e2d3-4409-8acf-aa035958ce4d))
+    (pin "3" (uuid a92abbd4-b232-43b8-9397-caba33f61c1e))
+    (pin "4" (uuid b9fdd451-9d08-4526-a43b-8f57a6c1c1c4))
+    (pin "5" (uuid 91ae2eda-5018-4456-a050-2f1ba1239c10))
+    (pin "6" (uuid c5eeac50-d6e4-4420-83f8-992503d28d82))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19771,14 +19855,14 @@
     (property "Value" "0.1uF" (at 248.92 135.89 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric" (at 245.11 148.59 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 245.11 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf" (at 245.11 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7a815f18-b0af-4ec6-bb9d-c9e13258360a))
-    (pin "2" (uuid ed314bf6-d197-4053-9db1-ac64001af0b6))
+    (pin "1" (uuid 9d147c51-1278-4166-898f-e3c575dc3738))
+    (pin "2" (uuid 5500b3a9-8956-4c7b-8548-533e835b5d28))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19803,7 +19887,7 @@
     (property "Datasheet" "" (at 127 105.41 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid c6cb7fdd-19cf-4463-b77d-a40979506a7a))
+    (pin "1" (uuid ab7c8739-7524-4aa3-a917-cd60ad99d000))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19828,7 +19912,7 @@
     (property "Datasheet" "" (at 236.22 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4669af73-5295-4c59-b27e-f4740f8fb70a))
+    (pin "1" (uuid bee41aab-b3de-4709-b4fe-2fde40f602e9))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19847,14 +19931,14 @@
     (property "Value" "1.0uF" (at 261.62 100.33 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric" (at 257.81 113.03 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 257.81 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf" (at 257.81 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c49ce254-d14e-4ab8-89fd-0f20fd3ddc14))
-    (pin "2" (uuid 976ba7ff-ac55-4181-b392-02350c3b9400))
+    (pin "1" (uuid 450edc68-2303-4570-91e7-23c6e2ca8afa))
+    (pin "2" (uuid 8cb84641-04f7-4768-9666-abd85ea3b245))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19879,7 +19963,7 @@
     (property "Datasheet" "" (at 223.52 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid 32cb1f4f-9d3a-4105-8507-29ea5a5f5a37))
+    (pin "1" (uuid 3a96a984-5233-45b3-a38e-cdf5cd4ba710))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19898,20 +19982,20 @@
     (property "Value" "LM66200DRLR" (at 152.4 33.02 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "SOT-5X3_DRL_TEX" (at 132.08 40.64 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-583-8" (at 132.08 40.64 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "LM66200DRLR" (at 132.08 40.64 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (pin "1" (uuid 3460b66e-7caf-4a2e-b5d9-491e98ec07ad))
-    (pin "2" (uuid 89bb15dc-1308-4c7c-b4d4-db138a7de3b6))
-    (pin "3" (uuid 15734ec6-a87b-43c9-acca-1a2c12297657))
-    (pin "5" (uuid e4be5aa4-64a1-49e0-a65b-c061edd195a7))
-    (pin "6" (uuid 4ebe00a5-d328-4d59-b5ed-6ab90175a970))
-    (pin "7" (uuid ca0d4adf-3474-47a1-b1cf-9368cddf5084))
-    (pin "8" (uuid c04bf634-a02a-4939-91cc-af1888eb4f6a))
-    (pin "4" (uuid cd324b69-fe83-44bd-acce-4545a6ca793c))
+    (pin "1" (uuid 88e5a68c-b2b4-49ea-a7c8-2095892949bd))
+    (pin "2" (uuid 41f1b7e5-3412-465e-a5dd-ac3cb6d5d002))
+    (pin "3" (uuid 814a7f4f-121a-4bfd-80d9-2a86b232936a))
+    (pin "5" (uuid 73d62fcd-54ed-4297-b716-0fc3c328c61e))
+    (pin "6" (uuid 6fefa458-8e75-4072-a3b8-1a9a6ad5f3a7))
+    (pin "7" (uuid 2a42c38a-a7ad-4b50-9681-15eb4fd0a071))
+    (pin "8" (uuid a193cc86-1701-49cb-a5fe-4471429c9fea))
+    (pin "4" (uuid ffac87b8-6824-4d82-858d-0f432a3230ff))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19930,14 +20014,14 @@
     (property "Value" "R" (at 201.93 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 207.01 52.578 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 207.01 52.578 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 207.01 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b44227c8-2395-4d7e-afd7-4be8e68a8595))
-    (pin "2" (uuid a4fab4eb-4abc-44d9-a2b6-f478f3900c3f))
+    (pin "1" (uuid 69e15768-6b25-4f47-b66d-7aaa9b4fab50))
+    (pin "2" (uuid cfc4d7d4-273d-4397-8cb8-851f9a055efa))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -19956,18 +20040,43 @@
     (property "Value" "0.1uF" (at 248.92 100.33 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric" (at 245.11 113.03 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 245.11 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf" (at 245.11 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f6bff1c6-4baf-416e-a84c-d2e0133a1f6e))
-    (pin "2" (uuid cc6004f1-3e65-4144-937c-7c7c1026e75c))
+    (pin "1" (uuid 3b85569d-1cb7-49f2-aecc-95da9be4b096))
+    (pin "2" (uuid 0592599b-295d-4ee8-8c53-d60ee0efbc7d))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
           (reference "C9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3VP") (at 96.52 175.26 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid fa36c0a3-d092-4cd0-8a7d-c98e45eb27d6)
+    (property "Reference" "#PWR075" (at 100.33 176.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3VP" (at 96.52 170.18 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 96.52 175.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 96.52 175.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 399e080e-8c00-4320-982d-e59f3d54a7fd))
+    (instances
+      (project "800+"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
+          (reference "#PWR075") (unit 1)
         )
       )
     )
@@ -19988,7 +20097,7 @@
     (property "Datasheet" "" (at 38.1 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8420e16b-d9e7-4d7a-b364-488580d09988))
+    (pin "1" (uuid 4ec5b1cd-527f-4307-84b7-9e89bcdef5ad))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -20013,9 +20122,9 @@
     (property "Datasheet" "~" (at 266.7 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2f659a4e-7258-4878-9c47-dcb1db9319d0))
-    (pin "2" (uuid 55ab0e40-19d7-4290-9701-d5fe3e1c16ed))
-    (pin "3" (uuid 932428df-e562-430f-933d-ae2021730a8c))
+    (pin "1" (uuid 42b17122-da76-40ca-8f79-0d5fbde49c26))
+    (pin "2" (uuid 45cc6280-5e28-46e0-8329-a178ccbdc080))
+    (pin "3" (uuid 7d43bb67-3be1-46ab-9900-9ef2a28c84d2))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
@@ -20040,7 +20149,7 @@
     (property "Datasheet" "" (at 132.08 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fd6fb5d5-50a5-4887-b6ff-189c9470dfdb))
+    (pin "1" (uuid b8cdb18d-4d09-4cbe-a5e0-6c3caa7dd8a4))
     (instances
       (project "800+"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/5f5447b0-53f0-4d17-8157-5cf7a63de2c4"
