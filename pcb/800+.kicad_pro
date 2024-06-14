@@ -56,12 +56,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "copper_edge_clearance|107010000|38537270|e07381c5-0a6c-4217-a719-8ff1b3d7a24a|a8429ded-46c7-4bd5-abac-950acee89817",
-        "copper_edge_clearance|96210000|38548203|801f6ed6-db82-455a-9095-7202c913294a|00fed5b1-d1ac-4f92-9eb5-1ef1886d8a26",
-        "silk_edge_clearance|105570000|37950000|79e7bf32-231e-498f-ad11-449543a6a91e|b6b92e71-2bc4-4769-af8c-09b3f5fa7ba0",
-        "silk_edge_clearance|97650000|37950000|99c9a2b6-dcef-4810-b4d3-806bd0a9f132|2067f3ce-3156-4cac-9cfa-c05a6acd111b"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -84,7 +79,7 @@
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
-        "items_not_allowed": "error",
+        "items_not_allowed": "ignore",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
         "lib_footprint_mismatch": "warning",
