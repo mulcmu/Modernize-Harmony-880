@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "7.0.2"
     },
-    "CreationDate": "2024-06-13T20:52:08-04:00"
+    "CreationDate": "2024-06-14T10:06:29-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -24,8 +24,8 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.2,
-      "PadToTrack": 0.2,
+      "PadToPad": 0.0,
+      "PadToTrack": 0.0,
       "TrackToTrack": 0.2,
       "MinLineWidth": 0.2,
       "TrackToRegion": 0.508,
@@ -36,6 +36,11 @@
     {
       "Path": "800+-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "800+-B_Cu.gbr",
+      "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {

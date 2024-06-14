@@ -33,6 +33,8 @@
     (stroke (width 0.12) (type solid)) (layer "Edge.Cuts") (tstamp 66e52bd7-43a1-4fea-afd4-9d5f9b5d7a6c))
   (fp_line (start 1.9 1.7) (end -1.9 1.7)
     (stroke (width 0.12) (type solid)) (layer "Edge.Cuts") (tstamp 8bc8163c-5013-4478-bfc8-8d5dee51284b))
+  (fp_rect (start -3.5 -1.9) (end 3.5 1.9)
+    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd") (tstamp 8b3d823d-dfc8-4be0-9788-55fd69ea3e03))
   (pad "1" smd rect (at -2.65 0.75) (size 1.2 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a13c9311-eece-438e-b979-c23016de28eb))
   (pad "2" smd rect (at -2.65 -0.75) (size 1.2 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp d6aeaefd-a0a4-48d8-a7b0-9be5dbab0f47))
   (pad "3" smd rect (at 2.65 -0.75) (size 1.2 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp f3d3d26a-b9db-4f84-8b24-b299767b3a63))

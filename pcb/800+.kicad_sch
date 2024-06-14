@@ -3806,7 +3806,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 191cd1a8-7934-440f-95fd-253710849d4b)
   )
-  (text "TODO" (at 27.94 250.19 90)
+  (text "TODO" (at 21.59 257.81 90)
     (effects (font (size 5 5) (thickness 1) bold) (justify left bottom))
     (uuid 1f7c91ba-7314-48ac-a9f7-24119dec5955)
   )
@@ -3814,8 +3814,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 799ca979-5e1a-44c1-a47e-4a4da2b8f564)
   )
-  (text "ESP32 6 free GPIO\nMSP430 0 free gpio\n\nAliexpress 2.5mm x 5p connector fits battery snuggly, too short\nkeep looking for available replacments\n\nAliexprexx cradle jst bigger than stock, mounting pads wider.\nPlug fits, update footprint\nMaybe not jst, molex or amphenol?\n\nbattery thermistor, find way to pulse or control supply current\nvref from msp430, one of the port 2 inputs switched briefly.\n\nIs ESP TX to MSP needed?  Removed it,  we will see....\nRolling ball might work as last switch on button matrix\n\nRegular LEDs instead of reverse mount, \n--less holes and cheaper, clearance and 2 reflows.  Tape to mount switch domes more complicated\n--1206 upside down, cheaper, 1 reflow, more hand rework\n--SK6812Mini reverse mount, cheap,  but bigger cutout battery compartment clearance\n\nTest:\nambient light sensor operation inside case.\n\n"
-    (at 29.21 274.32 0)
+  (text "Update cradel footprint to support stock and generic jst 1.25\nESP32 JTAG connector by the esp32, remove case to access\nMSP430 SWD to battery access cutout, more useful\nRotate backlight led foot prints to maximize clearance to holes for better routing\nCheck VEML7700-TR footprint\nAdd/fix courtyards to custom footprints\n\n---------\nESP32 6 free GPIO\nMSP430 0 free gpio\n\nAliexpress 2.5mm x 5p connector fits battery snuggly, too short\nkeep looking for available replacments\n\nAliexprexx cradle jst bigger than stock, mounting pads wider.\nPlug fits Maybe not jst, molex or amphenol?\n\nbattery thermistor, find way to pulse or control supply current\nvref from msp430, one of the port 2 inputs switched briefly.\n\nIs ESP TX to MSP needed?  Removed it,  we will see....\nRolling ball might work as last switch on button matrix\n\nRegular LEDs instead of reverse mount, \n--less holes and cheaper, clearance and 2 reflows.  Tape to mount switch domes more complicated\n--1206 upside down, cheaper, 1 reflow, more hand rework\n--SK6812Mini reverse mount, cheap,  but bigger cutout battery compartment clearance\n--Leds on flex PCB attached to main PCB like the stock EL\n\nTest:\nambient light sensor operation inside case.\n\n"
+    (at 27.94 287.02 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c21764e3-7735-4970-a715-e24ab4571682)
   )
