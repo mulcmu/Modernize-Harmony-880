@@ -9,6 +9,8 @@ The 880 remote build is great quality. I'm not sure exactly when I got mine but 
 
 This project is undertaking an upgrade for the 880 universal remote to, update screen to TFT with better resolution, build in wifi connectivity, and provide an open source software solution for setup and programming.
 
+Current PCB design has all existing remote features implemented, hardware and software testing in process.
+
 # Project Logs
 
 https://hackaday.io/project/185926-modernize-harmony-880
