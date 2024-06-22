@@ -45,7 +45,7 @@ void process_buttons(void) {
         uint8_t column = 0;
 
         //Zero is no buttons pressed, but is a valid index
-        //128 and greater is P1.7 for ball spring sensor
+        //128 and greater is P2.7 for ball spring sensor
         column = P2IN & (~BIT7);
         if(column != 0 ) {
             button = buttonMatrix[ bit_to_index[P3OUT] ][ bit_to_index[column] ];
@@ -53,8 +53,8 @@ void process_buttons(void) {
 
  
         if(button != 0) {
-          // Serial.write(button);
-          last_button_press=ticks;
+          Serial.write(button);
+          last_button_press=millis();
         }
 
         P3OUT = P3OUT << 1;

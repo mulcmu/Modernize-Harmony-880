@@ -12,8 +12,8 @@
 #define BitTest(arg, bits) ((arg) & (bits))
 
 // 65535 gives 65 seconds max duration
-EXTERN volatile uint16_t ticks;
-EXTERN uint16_t last_button_scan;
-EXTERN uint16_t last_button_press;
+EXTERN volatile unsigned long ticks;
+EXTERN unsigned long last_button_scan;
+EXTERN unsigned long last_button_press;
 
 EXTERN uint16_t counter;

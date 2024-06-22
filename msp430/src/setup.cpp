@@ -139,6 +139,10 @@ void mcu_init(void) {
 //     /* Enable USCI */
 //     UCA0CTL1 &= ~UCSWRST;
 
+
+//don't need timer with arduino millis();
+
+
     /* 
      * TA0CCTL0, Capture/Compare Control Register 0
      * 
@@ -151,24 +155,24 @@ void mcu_init(void) {
      * 
      * Note: ~<BIT> indicates that <BIT> has value zero
      */
-    TA0CCTL0 = CM_0 | CCIS_0 | OUTMOD_0 | CCIE;
+    // TA0CCTL0 = CM_0 | CCIS_0 | OUTMOD_0 | CCIE;
 
     /* TA0CCR0, Timer_A Capture/Compare Register 0 */
-    TA0CCR0 = 15999;
+    // TA0CCR0 = 15999;
 
-	//1ms timer
+	// //1ms timer
 
-    /* 
-     * TA0CTL, Timer_A3 Control Register
-     * 
-     * TASSEL_2 -- SMCLK
-     * ID_0 -- Divider - /1
-     * MC_1 -- Up Mode
-     */
-    TA0CTL = TASSEL_2 | ID_0 | MC_1;
+    // /* 
+    //  * TA0CTL, Timer_A3 Control Register
+    //  * 
+    //  * TASSEL_2 -- SMCLK
+    //  * ID_0 -- Divider - /1
+    //  * MC_1 -- Up Mode
+    //  */
+    // TA0CTL = TASSEL_2 | ID_0 | MC_1;
 
-     /* Clear MCx bits to stop timer */
-	TA0CTL &= ~(MC1 + MC0);
+    //  /* Clear MCx bits to stop timer */
+	// TA0CTL &= ~(MC1 + MC0);
 
 
     // do
