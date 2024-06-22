@@ -1,6 +1,7 @@
 {
 	"folders": [
 		{
+			"name": "msp430",
 			"path": "."
 		}
 	],

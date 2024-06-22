@@ -13,7 +13,7 @@
 
 // //precomputed array to return which MSB is set
 // //only supports one button per column
-// //there might be an assembly instruction for this
+// //TODO there might be an assembly instruction for this
 const uint8_t bit_to_index[256] = {
 0,0,1,1,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
 5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
@@ -53,7 +53,7 @@ void process_buttons(void) {
 
  
         if(button != 0) {
-          UCA0TXBUF = button;
+          // Serial.write(button);
           last_button_press=ticks;
         }
 

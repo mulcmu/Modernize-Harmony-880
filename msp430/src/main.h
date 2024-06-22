@@ -3,6 +3,7 @@
 #include <msp430.h>
 #include <msp430g2553.h>
 #include <stdint.h>
+#include <Arduino.h>
 
 // Macros for bitwise operations
 #define BitSet(arg, bits) ((arg) |= (bits))
