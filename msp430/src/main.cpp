@@ -18,14 +18,10 @@
 
 #pragma vector = PORT2_VECTOR
 __interrupt void PORT2_ISR_HOOK(void) {
-  //Configure for matrix scanning when button press detected
+  //Disable interrupt and configure for matrix scanning when button press detected
   P2IFG = 0;
   P3OUT = BIT0;
-
-  /* Start timer in up mode */
-  //TA0CTL |= MC_1;
   P2IE = 0;
-  ticks = 0;
   last_button_scan=0;
   last_button_press=millis();
 }
@@ -33,7 +29,6 @@ __interrupt void PORT2_ISR_HOOK(void) {
 #pragma vector = TIMER0_A0_VECTOR
 __interrupt void TIMER0_A0_ISR_HOOK(void) {
   // CCIFG is reset automatically;
-  ticks++;
   __bic_SR_register_on_exit(LPM0_bits);
 }
 
@@ -45,58 +40,51 @@ void setup()
   Serial.println("Setup()");
   mcu_init();
 
-  pinMode(P1_6, OUTPUT);
-  pinMode(P1_0, OUTPUT);
+  pinMode(P1_1, INPUT_PULLUP);  //Fuelgauge alert
+  pinMode(P1_3, INPUT_PULLUP);  //Battery Powered
+  pinMode(P1_4, INPUT_PULLDOWN);  //ChargeStatus
+  pinMode(P1_5, INPUT_PULLUP);  //3v3VP Enable
 
   Serial.begin(115200);
   Wire.begin();
 	
-  ticks=0;
 	last_button_scan=0;
 	last_button_press = 0;
   
   // turn the LED on (HIGH is the voltage level)
-  digitalWrite(P1_0, HIGH);
-  digitalWrite(P1_6, HIGH);
+  digitalWrite(P1_5, HIGH);
 
   Serial.println("loop");
+  
+  //Start timer in up mode for 1ms wakeups
+  TA0CTL |= MC_1;  
  
 }
 
 void loop()
 {
-  // // turn the LED on (HIGH is the voltage level)
-  // digitalWrite(RED_LED, HIGH);
-  // // wait for a second
-  // delay(500);
-  // // turn the LED off by making the voltage LOW
-  // digitalWrite(RED_LED, LOW);
-  // // wait for a second
-  // delay(500);
-  
-  // Serial.write(millis() & 0xFF);
 
 	if(millis()-last_button_scan > 5) {
+    last_button_scan = millis();
     process_buttons();
-		last_button_scan = millis();
 	}
 
 	if(millis()-last_button_press > 75 ) {
 		Serial.write(0xFF);
 	}
 
-	if(millis()-last_button_press > 30000) {
+	if(millis()-last_button_press > 10000) {
     //Stop active scanning after last press
     //Setup port 2 interrupt with all rows HIGH
 		P3OUT = 0xFE;
     P2IFG = 0;
 		P2IE = 0xFF;
-		digitalWrite(P1_6, LOW);
+		digitalWrite(P1_5, LOW);
 	} else {
-		digitalWrite(P1_6, HIGH);
+		digitalWrite(P1_5, HIGH);
 	}
 
-  //  __bis_SR_register(LPM0_bits);
+  __bis_SR_register(LPM0_bits);
   
 }
 

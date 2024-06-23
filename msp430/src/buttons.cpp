@@ -51,7 +51,6 @@ void process_buttons(void) {
             button = buttonMatrix[ bit_to_index[P3OUT] ][ bit_to_index[column] ];
         }
 
- 
         if(button != 0) {
           Serial.write(button);
           last_button_press=millis();
