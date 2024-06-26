@@ -11,8 +11,6 @@
 #define BitFlip(arg, bits) ((arg) ^= (bits))
 #define BitTest(arg, bits) ((arg) & (bits))
 
-// 65535 gives 65 seconds max duration
-EXTERN volatile unsigned long ticks;
 EXTERN unsigned long last_button_scan;
 EXTERN unsigned long last_button_press;
 

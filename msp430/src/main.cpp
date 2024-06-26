@@ -25,7 +25,6 @@ __interrupt void PORT2_ISR_HOOK(void) {
   /* Start timer in up mode */
   //TA0CTL |= MC_1;
   P2IE = 0;
-  ticks = 0;
   last_button_scan=0;
   last_button_press=millis();
 }
@@ -33,7 +32,6 @@ __interrupt void PORT2_ISR_HOOK(void) {
 #pragma vector = TIMER0_A0_VECTOR
 __interrupt void TIMER0_A0_ISR_HOOK(void) {
   // CCIFG is reset automatically;
-  ticks++;
   __bic_SR_register_on_exit(LPM0_bits);
 }
 
@@ -51,7 +49,6 @@ void setup()
   Serial.begin(115200);
   Wire.begin();
 	
-  ticks=0;
 	last_button_scan=0;
 	last_button_press = 0;
   
@@ -85,7 +82,7 @@ void loop()
 		Serial.write(0xFF);
 	}
 
-	if(millis()-last_button_press > 30000) {
+	if(millis()-last_button_press > 5000) {
     //Stop active scanning after last press
     //Setup port 2 interrupt with all rows HIGH
 		P3OUT = 0xFE;
