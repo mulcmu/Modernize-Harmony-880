@@ -11,7 +11,6 @@
 #define BitFlip(arg, bits) ((arg) ^= (bits))
 #define BitTest(arg, bits) ((arg) & (bits))
 
-// overkill but just use built in millis()
 EXTERN unsigned long last_button_scan;
 EXTERN unsigned long last_button_press;
 

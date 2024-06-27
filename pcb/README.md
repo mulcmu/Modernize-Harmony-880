@@ -1,6 +1,12 @@
-![800+1](800+.png)
+# Alpha3 PCB
+
+![800+1](.\alpha3\800+.png)
+
+Alpha3 PCB designed and ordered to test the peripheral operation.  Should be functionally complete if everything works.
 
 # Alpha2 PCB
+
+![800+1](800+.png)
 
 Updated the Kicad project for another alpha PCB.  Two layer PCB again but 0.8mm thick to fully test fitup with case.
 

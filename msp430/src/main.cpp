@@ -73,7 +73,7 @@ void loop()
 		Serial.write(0xFF);
 	}
 
-	if(millis()-last_button_press > 10000) {
+	if(millis()-last_button_press > 5000) {
     //Stop active scanning after last press
     //Setup port 2 interrupt with all rows HIGH
 		P3OUT = 0xFE;
