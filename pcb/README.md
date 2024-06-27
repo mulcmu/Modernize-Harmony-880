@@ -1,8 +1,10 @@
 # Alpha3 PCB
 
-![800+1](.\alpha3\800+.png)
+![800+1](./alpha3/800%2B.png)
 
 Alpha3 PCB designed and ordered to test the peripheral operation.  Should be functionally complete if everything works.
+
+There are some clearance issues with the bottom of remote case screw bosses interfering with parts on bottom of board.
 
 # Alpha2 PCB
 
