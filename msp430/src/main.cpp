@@ -43,7 +43,7 @@ void setup()
   pinMode(P1_1, INPUT_PULLUP);  //Fuelgauge alert
   pinMode(P1_3, INPUT_PULLUP);  //Battery Powered
   pinMode(P1_4, INPUT_PULLDOWN);  //ChargeStatus
-  pinMode(P1_5, INPUT_PULLUP);  //3v3VP Enable
+  pinMode(P1_5, OUTPUT);  //3v3VP Enable
 
   Serial.begin(115200);
   Wire.begin();
@@ -79,9 +79,6 @@ void loop()
 		P3OUT = 0xFE;
     P2IFG = 0;
 		P2IE = 0xFF;
-		digitalWrite(P1_5, LOW);
-	} else {
-		digitalWrite(P1_5, HIGH);
 	}
 
   __bis_SR_register(LPM0_bits);

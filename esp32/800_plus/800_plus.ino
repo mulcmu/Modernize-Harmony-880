@@ -24,8 +24,8 @@
 // #define TFT_RST             9
 // #define TFT_INVERSION_ON
 
-#define LCD_BL_GPIO          1       //HIGH is ON
-#define BUTTON_LED_GPIO      38  //LOW is ON
+#define LCD_BL_GPIO          1       //LOW is ON
+#define BUTTON_LED_GPIO      38      //LOW is ON
 
 #define USB_Serial Serial
 #define MSP_Serial Serial1
@@ -67,7 +67,7 @@ void setup() {
   USB_Serial.begin(115200);
   MSP_Serial.begin(115200, SERIAL_8N1, 18, 17);
 
-  digitalWrite(LCD_BL_GPIO,HIGH);
+  digitalWrite(LCD_BL_GPIO,LOW);
   digitalWrite(BUTTON_LED_GPIO,LOW);
   
   lv_init();
@@ -103,11 +103,11 @@ int button=0;
 void loop() {
   
   if(digitalRead(7)==HIGH) {
-    digitalWrite(LCD_BL_GPIO,HIGH);
+    digitalWrite(LCD_BL_GPIO,LOW);
     digitalWrite(BUTTON_LED_GPIO,LOW);
   } else{
     digitalWrite(LCD_BL_GPIO,LOW);
-    digitalWrite(BUTTON_LED_GPIO,HIGH);
+    digitalWrite(BUTTON_LED_GPIO,LOW);
   }
 
   while(MSP_Serial.available()) {
