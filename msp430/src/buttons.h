@@ -3,6 +3,8 @@
 #include <msp430.h>
 #include <msp430g2553.h>
 #include <stdint.h>
+#include <Arduino.h>
+
 #include "main.h"
 
 #define buttonRows 8 //Rows are outputs

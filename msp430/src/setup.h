@@ -4,6 +4,8 @@
 #include <msp430g2553.h>
 #include <stdint.h>
 
+#include <Arduino.h>
+
 #include "main.h"
 
 void mcu_init(void);

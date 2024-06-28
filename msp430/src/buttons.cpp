@@ -13,7 +13,7 @@
 
 // //precomputed array to return which MSB is set
 // //only supports one button per column
-// //there might be an assembly instruction for this
+// //TODO there might be an assembly instruction for this
 const uint8_t bit_to_index[256] = {
 0,0,1,1,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
 5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
@@ -45,16 +45,15 @@ void process_buttons(void) {
         uint8_t column = 0;
 
         //Zero is no buttons pressed, but is a valid index
-        //128 and greater is P1.7 for ball spring sensor
+        //128 and greater is P2.7 for ball spring sensor
         column = P2IN & (~BIT7);
         if(column != 0 ) {
             button = buttonMatrix[ bit_to_index[P3OUT] ][ bit_to_index[column] ];
         }
 
- 
         if(button != 0) {
-          UCA0TXBUF = button;
-          last_button_press=ticks;
+          Serial.write(button);
+          last_button_press=millis();
         }
 
         P3OUT = P3OUT << 1;
