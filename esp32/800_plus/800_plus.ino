@@ -43,6 +43,8 @@
 
 #define IR_RECEIVE_PIN          21 
 #define IR_SEND_PIN              2  
+#define NO_LED_FEEDBACK_CODE
+//#define USE_OPEN_DRAIN_OUTPUT_FOR_SEND_PIN
 #include <IRremote.hpp> // include the library
 
 
@@ -82,6 +84,8 @@ void setup() {
   pinMode(LCD_BL_GPIO,OUTPUT);
   pinMode(BUTTON_LED_GPIO,OUTPUT);
   pinMode(7,INPUT_PULLUP);
+  pinMode(IR_SEND_PIN,OUTPUT);
+
 
   //blocks on 2.0.14 code,okay in 3.0.2 & 2.0.17
   USB_Serial.begin(115200);
@@ -95,6 +99,7 @@ void setup() {
 
   // Start the receiver and if not 3. parameter specified, take LED_BUILTIN pin from the internal boards definition as default feedback LED
   IrReceiver.begin(IR_RECEIVE_PIN, 0);  
+  // IrSender.begin();
   
   USB_Serial.println("IrReceiver started....");
 
@@ -148,18 +153,21 @@ void loop() {
     button = MSP_Serial.read();
     if (button != 255) {
       USB_Serial.printf("millis %d:\tbutton: %d\n", millis(), button);
-    }
+     }
   }
 
   if(button>0 && button < 0xFE) {
     sprintf(button_value, "%d", button);
     // USB_Serial.println(button_value);
     tick_screen_main();
+    //IrSender.sendNEC(0x0101, 0x34, 0);
+    digitalWrite(2,LOW); 
   }
   else {
     sprintf(button_value, "880+");
     // USB_Serial.println(button_value);
     tick_screen_main();
+    digitalWrite(2,HIGH); 
 }
   //USB_Serial.printf("loop %d:\t%d\n", millis(), button);
 
@@ -189,8 +197,6 @@ void loop() {
             // do something else
         }
     }
-
-
 
   lv_task_handler();  // let the GUI do its work
   delay(2);     
