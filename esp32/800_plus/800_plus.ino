@@ -4,6 +4,8 @@
 //ESP 2.0.15, 2.0.16, 2.0.17,  3.x have issue with ST7789 screen and TFT_eSPI, panic on tft.init()
 //2.0.14 works
 //https://github.com/espressif/arduino-esp32/issues/9618#issuecomment-2114839060
+//Fixed with USE_HSPI_PORT
+
 
 //3.0.2 working with CONFIG_IDF_TARGET_ESP32S3
 //https://github.com/espressif/arduino-esp32/issues/9618#issuecomment-2107459271
@@ -38,6 +40,11 @@
 
 #define LCD_BL_GPIO          1       //LOW is ON
 #define BUTTON_LED_GPIO      38      //LOW is ON
+
+#define IR_RECEIVE_PIN          21 
+#define IR_SEND_PIN              2  
+#include <IRremote.hpp> // include the library
+
 
 #define USB_Serial Serial
 #define MSP_Serial Serial1
@@ -76,17 +83,27 @@ void setup() {
   pinMode(BUTTON_LED_GPIO,OUTPUT);
   pinMode(7,INPUT_PULLUP);
 
-  //blocks on 2.0.14 code,okay in 3.0.2
+  //blocks on 2.0.14 code,okay in 3.0.2 & 2.0.17
   USB_Serial.begin(115200);
   
   MSP_Serial.begin(115200, SERIAL_8N1, 18, 17);
 
+  USB_Serial.println("Serial started....");
+
   digitalWrite(LCD_BL_GPIO,LOW);
   digitalWrite(BUTTON_LED_GPIO,LOW);
+
+  // Start the receiver and if not 3. parameter specified, take LED_BUILTIN pin from the internal boards definition as default feedback LED
+  IrReceiver.begin(IR_RECEIVE_PIN, 0);  
   
+  USB_Serial.println("IrReceiver started....");
+
   lv_init();
   lv_log_register_print_cb(log_print);
   lv_tick_set_cb(my_tick);
+
+  USB_Serial.println("lvgl started....");
+
 
   // Create a display object
   lv_display_t * disp;
@@ -110,6 +127,9 @@ void setup() {
 
   ui_init();
 
+  USB_Serial.println("ui_init started....");
+
+
 }
 
 int button=0;
@@ -126,7 +146,9 @@ void loop() {
 
   while(MSP_Serial.available()) {
     button = MSP_Serial.read();
-    USB_Serial.printf("millis %d:\tbutton: %d\n", millis(), button);
+    if (button != 255) {
+      USB_Serial.printf("millis %d:\tbutton: %d\n", millis(), button);
+    }
   }
 
   if(button>0 && button < 0xFE) {
@@ -140,6 +162,35 @@ void loop() {
     tick_screen_main();
 }
   //USB_Serial.printf("loop %d:\t%d\n", millis(), button);
+
+    if (IrReceiver.decode()) {
+      USB_Serial.println("IR decode:");
+        /*
+         * Print a summary of received data
+         */
+        if (IrReceiver.decodedIRData.protocol == UNKNOWN) {
+            Serial.println(F("Received noise or an unknown (or not yet enabled) protocol"));
+            // We have an unknown protocol here, print extended info
+            IrReceiver.printIRResultRawFormatted(&Serial, true);
+            IrReceiver.resume(); // Do it here, to preserve raw data for printing with printIRResultRawFormatted()
+        } else {
+            IrReceiver.resume(); // Early enable receiving of the next IR frame
+            IrReceiver.printIRResultShort(&Serial);
+            IrReceiver.printIRSendUsage(&Serial);
+        }
+        Serial.println();
+
+        /*
+         * Finally, check the received data and perform actions according to the received command
+         */
+        if (IrReceiver.decodedIRData.command == 0x10) {
+            // do something
+        } else if (IrReceiver.decodedIRData.command == 0x11) {
+            // do something else
+        }
+    }
+
+
 
   lv_task_handler();  // let the GUI do its work
   delay(2);     
