@@ -1,7 +1,16 @@
 //ESP32-S3-WROOM-1-N16R8 16 MB (Quad SPI) 8 MB (Octal SPI)
 //FQBN: esp32:esp32:esp32s3:CDCOnBoot=cdc,FlashSize=16M,PSRAM=opi
 
-//ESP 2.0.15 and 2.0.16 have issue with ST7789 screen and TFT_eSPI, panic on tft.init()
+//ESP 2.0.15, 2.0.16, 2.0.17,  3.x have issue with ST7789 screen and TFT_eSPI, panic on tft.init()
+//2.0.14 works
+//https://github.com/espressif/arduino-esp32/issues/9618#issuecomment-2114839060
+
+//3.0.2 working with CONFIG_IDF_TARGET_ESP32S3
+//https://github.com/espressif/arduino-esp32/issues/9618#issuecomment-2107459271
+//#define REG_SPI_BASE(i) (DR_REG_SPI1_BASE + (((i) > 1) ? (((i) * 0x1000) + 0x20000) : (((~(i)) & 1) * 0x1000)))
+//hack in tft_espi_esp32_s3.h
+//tested sat without the hack too!
+
 #include <TFT_eSPI.h>
 
 //LVGL 9.0 and 9.1 have bug with TFT_espi rotate.  Manual update src from github work around until next release
@@ -23,6 +32,9 @@
 // #define TFT_DC              13
 // #define TFT_RST             9
 // #define TFT_INVERSION_ON
+
+// #define TFT_SPI_MODE SPI_MODE0
+// #define USE_HSPI_PORT
 
 #define LCD_BL_GPIO          1       //LOW is ON
 #define BUTTON_LED_GPIO      38      //LOW is ON
@@ -64,7 +76,9 @@ void setup() {
   pinMode(BUTTON_LED_GPIO,OUTPUT);
   pinMode(7,INPUT_PULLUP);
 
+  //blocks on 2.0.14 code,okay in 3.0.2
   USB_Serial.begin(115200);
+  
   MSP_Serial.begin(115200, SERIAL_8N1, 18, 17);
 
   digitalWrite(LCD_BL_GPIO,LOW);
