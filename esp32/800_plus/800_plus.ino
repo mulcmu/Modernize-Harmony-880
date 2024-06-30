@@ -44,8 +44,21 @@
 #define IR_RECEIVE_PIN          21 
 #define IR_SEND_PIN              2  
 #define NO_LED_FEEDBACK_CODE
-//#define USE_OPEN_DRAIN_OUTPUT_FOR_SEND_PIN
 #include <IRremote.hpp> // include the library
+
+#define BUZZER_PIN          4 
+// const char * arkanoid = "Arkanoid:d=4,o=5,b=140:8g6,16p,16g.6,2a#6,32p,8a6,8g6,8f6,8a6,2g6";
+// #include <NonBlockingRtttl.h>
+char StarWarsInRam[] =
+        "StarWars:d=32,o=5,b=45,l=2,s=N:p,f#,f#,f#,8b.,8f#.6,e6,d#6,c#6,8b.6,16f#.6,e6,d#6,c#6,8b.6,16f#.6,e6,d#6,e6,8c#6";
+#include <PlayRtttl.hpp>
+
+
+#define i2c_SDA 15
+#define i2c_SCL 16
+#include <Wire.h>
+#include <SparkFun_VEML7700_Arduino_Library.h>
+VEML7700 lightSensor; 
 
 
 #define USB_Serial Serial
@@ -85,6 +98,25 @@ void setup() {
   pinMode(BUTTON_LED_GPIO,OUTPUT);
   pinMode(7,INPUT_PULLUP);
   pinMode(IR_SEND_PIN,OUTPUT);
+
+  //bool begin(int sdaPin, int sclPin, uint32_t frequency)
+  Wire.begin(i2c_SDA, i2c_SCL,400000);
+
+
+  // pinMode(BUZZER_PIN, OUTPUT);
+  // digitalWrite(BUZZER_PIN,HIGH);
+
+  // tone(BUZZER_PIN, 700, 1000);
+
+
+  if (lightSensor.begin() == false)
+  {
+    Serial.println("Unable to communicate with the VEML7700. Please check the wiring. Freezing...");
+    while (1)
+      ;
+  }  
+
+  //lightSensor.setSensitivityMode(VEML7700_SENSITIVITY_x2);
 
 
   //blocks on 2.0.14 code,okay in 3.0.2 & 2.0.17
@@ -134,6 +166,7 @@ void setup() {
 
   USB_Serial.println("ui_init started....");
 
+  
 
 }
 
@@ -160,15 +193,17 @@ void loop() {
     sprintf(button_value, "%d", button);
     // USB_Serial.println(button_value);
     tick_screen_main();
-    //IrSender.sendNEC(0x0101, 0x34, 0);
-    digitalWrite(2,LOW); 
+    IrSender.sendNEC(0x0101, button, 0);
+    // tone(BUZZER_PIN, 700, 1000);
+    Serial.printf("Lux: %.2f\n",lightSensor.getLux()); 
   }
   else {
     sprintf(button_value, "880+");
     // USB_Serial.println(button_value);
     tick_screen_main();
-    digitalWrite(2,HIGH); 
-}
+    // noTone(BUZZER_PIN);
+    // digitalWrite(BUZZER_PIN,HIGH);
+  }
   //USB_Serial.printf("loop %d:\t%d\n", millis(), button);
 
     if (IrReceiver.decode()) {
