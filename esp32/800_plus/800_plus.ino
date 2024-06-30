@@ -44,6 +44,7 @@
 #define IR_RECEIVE_PIN          21 
 #define IR_SEND_PIN              2  
 #define NO_LED_FEEDBACK_CODE
+#define USE_OPEN_DRAIN_OUTPUT_FOR_SEND_PIN
 #include <IRremote.hpp> // include the library
 
 #define BUZZER_PIN          4 
@@ -60,6 +61,7 @@ char StarWarsInRam[] =
 #include <SparkFun_VEML7700_Arduino_Library.h>
 VEML7700 lightSensor; 
 
+#define INPUT_5V_SUPPLY 47  //High for USB, LOW for Cradle
 
 #define USB_Serial Serial
 #define MSP_Serial Serial1
@@ -96,8 +98,13 @@ void setup() {
 
   pinMode(LCD_BL_GPIO,OUTPUT);
   pinMode(BUTTON_LED_GPIO,OUTPUT);
-  pinMode(7,INPUT_PULLUP);
   pinMode(IR_SEND_PIN,OUTPUT);
+  
+  digitalWrite(LCD_BL_GPIO,HIGH);
+  digitalWrite(BUTTON_LED_GPIO,HIGH);  
+  digitalWrite(IR_SEND_PIN,HIGH);  
+
+  pinMode(INPUT_5V_SUPPLY,INPUT);
 
   //bool begin(int sdaPin, int sclPin, uint32_t frequency)
   Wire.begin(i2c_SDA, i2c_SCL,400000);
@@ -116,7 +123,7 @@ void setup() {
       ;
   }  
 
-  //lightSensor.setSensitivityMode(VEML7700_SENSITIVITY_x2);
+  lightSensor.setSensitivityMode(VEML7700_SENSITIVITY_x2);
 
 
   //blocks on 2.0.14 code,okay in 3.0.2 & 2.0.17
@@ -126,8 +133,7 @@ void setup() {
 
   USB_Serial.println("Serial started....");
 
-  digitalWrite(LCD_BL_GPIO,LOW);
-  digitalWrite(BUTTON_LED_GPIO,LOW);
+
 
   // Start the receiver and if not 3. parameter specified, take LED_BUILTIN pin from the internal boards definition as default feedback LED
   IrReceiver.begin(IR_RECEIVE_PIN, 0);  
@@ -166,7 +172,19 @@ void setup() {
 
   USB_Serial.println("ui_init started....");
 
-  
+  if(digitalRead(INPUT_5V_SUPPLY)==HIGH)
+    USB_Serial.println("5V from USB");
+  else
+    USB_Serial.println("5V from USB");
+
+  ledcAttachPin(LCD_BL_GPIO, 1); // assign RGB led pins to channels
+  ledcAttachPin(BUTTON_LED_GPIO, 2);
+  ledcSetup(1, 12000, 8); // 12 kHz PWM, 8-bit resolution
+  ledcSetup(2, 12000, 8);
+
+  //0 full, 255 off
+  ledcWrite(1, 128);
+  ledcWrite(2, 128);
 
 }
 
@@ -193,7 +211,11 @@ void loop() {
     sprintf(button_value, "%d", button);
     // USB_Serial.println(button_value);
     tick_screen_main();
-    IrSender.sendNEC(0x0101, button, 0);
+    //IrSender.sendNEC(0x0101, button, 0);
+    if(button==19) 
+      IrSender.sendKaseikyo_Denon(0x014, 0x09, 5);
+    if(button==20)
+      IrSender.sendKaseikyo_Denon(0x114, 0x17, 5);
     // tone(BUZZER_PIN, 700, 1000);
     Serial.printf("Lux: %.2f\n",lightSensor.getLux()); 
   }
