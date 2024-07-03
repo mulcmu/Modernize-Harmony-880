@@ -7560,6 +7560,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid cd5408cc-9699-4dc6-bad8-5c83ed5cc668)
   )
+  (text "Measured 1.8V on 22 ohm.  80mA, \nnot as bright as stock 5mm LEDs"
+    (at 122.555 72.39 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid cfc19685-6554-47f5-9c8a-4345dd08d34d)
+  )
 
   (label "LCD_BLC" (at 175.26 34.29 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))

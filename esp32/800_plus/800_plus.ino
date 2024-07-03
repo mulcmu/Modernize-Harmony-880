@@ -44,7 +44,7 @@
 #define IR_RECEIVE_PIN          21 
 #define IR_SEND_PIN              2  
 #define NO_LED_FEEDBACK_CODE
-#define USE_OPEN_DRAIN_OUTPUT_FOR_SEND_PIN
+// #define USE_OPEN_DRAIN_OUTPUT_FOR_SEND_PIN
 #include <IRremote.hpp> // include the library
 
 #define BUZZER_PIN          4 
