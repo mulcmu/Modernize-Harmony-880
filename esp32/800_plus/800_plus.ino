@@ -1,42 +1,17 @@
+//ESP32 board package 3.0.3
 //ESP32-S3-WROOM-1-N16R8 16 MB (Quad SPI) 8 MB (Octal SPI)
 //FQBN: esp32:esp32:esp32s3:CDCOnBoot=cdc,FlashSize=16M,PSRAM=opi
 
-//ESP 2.0.15, 2.0.16, 2.0.17,  3.x have issue with ST7789 screen and TFT_eSPI, panic on tft.init()
-//2.0.14 works
-//https://github.com/espressif/arduino-esp32/issues/9618#issuecomment-2114839060
-//Fixed with USE_HSPI_PORT
-
-
-//3.0.2 working with CONFIG_IDF_TARGET_ESP32S3
-//https://github.com/espressif/arduino-esp32/issues/9618#issuecomment-2107459271
-//#define REG_SPI_BASE(i) (DR_REG_SPI1_BASE + (((i) > 1) ? (((i) * 0x1000) + 0x20000) : (((~(i)) & 1) * 0x1000)))
-//hack in tft_espi_esp32_s3.h
-//tested sat without the hack too!
-
+//2.5.43
 #include <TFT_eSPI.h>
 
-//LVGL 9.0 and 9.1 have bug with TFT_espi rotate.  Manual update src from github work around until next release
+//LVGL 9.2
 #include <lvgl.h>
 
 // #include "WiFi.h"
 
 //About 7 pixels obscured at top and 20 at bottom
 #include "ui.h"
-
-//Configuration for tft_espi user_setup.h
-// #define ST7789_DRIVER  
-// #define TFT_RGB_ORDER TFT_BGR
-// #define TFT_WIDTH  240
-// #define TFT_HEIGHT 320 
-// #define TFT_MOSI            10
-// #define TFT_SCLK            11
-// #define TFT_CS              12
-// #define TFT_DC              13
-// #define TFT_RST             9
-// #define TFT_INVERSION_ON
-
-// #define TFT_SPI_MODE SPI_MODE0
-// #define USE_HSPI_PORT
 
 #define LCD_BL_GPIO          1       //LOW is ON
 #define BUTTON_LED_GPIO      38      //LOW is ON
@@ -45,19 +20,21 @@
 #define IR_SEND_PIN              2  
 #define NO_LED_FEEDBACK_CODE
 // #define USE_OPEN_DRAIN_OUTPUT_FOR_SEND_PIN
+// Need greater than 4.4 for ESP32 3.X board suppport
 #include <IRremote.hpp> // include the library
 
 #define BUZZER_PIN          4 
 // const char * arkanoid = "Arkanoid:d=4,o=5,b=140:8g6,16p,16g.6,2a#6,32p,8a6,8g6,8f6,8a6,2g6";
 // #include <NonBlockingRtttl.h>
+//#include <PlayRtttl.hpp>
+
 char StarWarsInRam[] =
         "StarWars:d=32,o=5,b=45,l=2,s=N:p,f#,f#,f#,8b.,8f#.6,e6,d#6,c#6,8b.6,16f#.6,e6,d#6,c#6,8b.6,16f#.6,e6,d#6,e6,8c#6";
-#include <PlayRtttl.hpp>
-
 
 #define i2c_SDA 15
 #define i2c_SCL 16
 #include <Wire.h>
+
 #include <SparkFun_VEML7700_Arduino_Library.h>
 VEML7700 lightSensor; 
 
@@ -177,10 +154,15 @@ void setup() {
   else
     USB_Serial.println("5V from USB");
 
-  ledcAttachPin(LCD_BL_GPIO, 1); // assign RGB led pins to channels
-  ledcAttachPin(BUTTON_LED_GPIO, 2);
-  ledcSetup(1, 12000, 8); // 12 kHz PWM, 8-bit resolution
-  ledcSetup(2, 12000, 8);
+  // ESP board 3.x
+  ledcAttach(LCD_BL_GPIO, 12000, 8);
+  ledcAttach(BUTTON_LED_GPIO, 12000, 8);
+
+  // ESP board 2.X
+  // ledcAttachPin(LCD_BL_GPIO, 1); // assign RGB led pins to channels
+  // ledcAttachPin(BUTTON_LED_GPIO, 2);
+  // ledcSetup(1, 12000, 8); // 12 kHz PWM, 8-bit resolution
+  // ledcSetup(2, 12000, 8);
 
   //0 full, 255 off
   ledcWrite(1, 128);
